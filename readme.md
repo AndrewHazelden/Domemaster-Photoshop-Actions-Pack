@@ -35,7 +35,7 @@ _This list is a work in progress_
 	 > Crop to Selection
 	 > Select All
 	 > Fisheye Alpha Channel
-	 > Fisheye Layer Mash
+	 > Fisheye Layer Mask
 	 > Layer Mask from Selection
 	 > Layer Mask from Inverse Selection
 	 > Inside Circular 50% Mask

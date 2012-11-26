@@ -172,12 +172,12 @@ This action creates a new layer mask based upon inverting the current selection.
 ###Inside Circular 50% Mask
 This action creates a circular layer mask that hides the area inside a circular region in the center of the current layer.
 
-![Inside Circular 50% Mask Example]("https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions%20Previews/Inside-Circular-50%-Mask-Action.jpg")
+![Inside Circular 50% Mask Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions%20Previews/Inside-Circular-50-Percent-Mask-Action.jpg)
 
 ###Outside Circular 50% Mask
 This action creates a circular layer mask that hides the area outside a circular region in the center of the current layer.
 
-![Outside Circular 50% Mask Example]("https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions%20Previews/Outside-Circular-50%-Mask-Action.jpg")
+![Outside Circular 50% Mask Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions%20Previews/Outside-Circular-50-Percent-Mask-Action.jpg)
 
 ###Enable Layer Mask
 This action will enable the layer mask on the current layer. This is useful for comparing the effects of transparency on the current layer.

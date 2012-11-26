@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Domemaster Photoshop Actions Pack
 Version 0.1 - Nov 24, 2012
 by Andrew Hazelden

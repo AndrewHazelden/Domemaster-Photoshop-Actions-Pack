@@ -1,5 +1,5 @@
 #Domemaster Photoshop Actions Pack
-Version 0.3 - Nov 26, 2012
+Version 0.3 - Nov 28, 2012
 by Andrew Hazelden
 
 
@@ -9,12 +9,16 @@ The Domemaster Photoshop Actions Pack is a collection of custom Adobe Photoshop 
 
 The actions provide tools for converting images from several common panoramic formats such as angular fisheye, equirectangular, and cube map panoramas, and general utilities for fulldome production.
 
+![Domemaster Photoshop Actions Pack](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/photoshop-CS6-actions-list.png)
+
+
+
 
 #Action List
 
 ##Transforms:
 	> 1:1 to 2:1 Aspect Ratio Expand
-	> 2:1 to 1:1 Aspect Ratio reduce
+	> 2:1 to 1:1 Aspect Ratio Reduce
 	> 50% Scale
 	> 200% Scale
 	> Rotate 90 Degrees
@@ -86,17 +90,25 @@ The Domemaster Photoshop Actions Pack is comptaible with Photoshop CS3 to CS6 on
 
 Start by opening Adobe Photoshop. Navigate to the "Window" menu, and select the "Actions" menu item.
 
+![Open the Actions Tab](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/1.install-window-actions-menu-item.png)
+
 ##Step 2. Load the actions.
 
 Click on the Actions tab pop-up menu located at the top right of the actions tab.
 
 Select the "Load Actions" menu item.
 
+![Select the "Load Actions..." menu item to import the actions pack](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/2.load-actions-menu-item.png)
+
 In the Load dialogue window select the action files "Conversions.atn", "General Utilties.atn", "Masking and Selection.atn", and "Transforms.atn".
 
 Click the Load button to open the action files.
 
+![Select the actions files in the Load dialogue window and click load.](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/3.load-actions-dialogue.png)
+
 The Domemaster Photoshop Actions Pack files will be loaded into the Actions Tab.
+
+![The Domemaster Photoshop Actions Pack is now loaded in the Actions tab.](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/4.actions-loaded.png)
 
 ##Step 3. Switch to Button Mode
 
@@ -105,42 +117,36 @@ If you want to make it easier to run the actions you can switch the Actions tab 
 Click on the Actions tab pop-up menu located at the top right of the actions tab.
 
 Select the first item in the menu labeled "Button Mode". Your view will switch from a long list into a colorfull grid of labeled buttons.
+![Switch the Actions tab to the to button display  mode](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/5.switch-to-button-mode.png)
 
 To make it easier to find things, the actions groups are color coded:
-The Conversions actions are blue. 
-The General Utilties actions are violet. 
-The Masking and Selection actions are green.
-The Transforms actions are yellow.
+
+The "Conversions" actions are blue. 
+
+The "General Utilties" actions are violet. 
+
+The "Masking and Selection" actions are green.
+
+The "Transforms" actions are yellow.
+
+![Switch the Actions tab to the to button display  mode](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/6.actions-list.png)
 
 #Tool Descriptions
 
 ##Transforms
 
-###Inverse Angular Fisheye
-This action will allow you to inverse an angular fisheye image. This is the effect "rolling" the inside of the fisheye image to the outside of the frame. This effect works best with a 360&deg; degree fisheye image.
 
-The action can be used to quickly turn a regular angular fisheye image into a "tiny planet" style image.
+### 1:1 to 2:1 Aspect Ratio Expand
+This action will convert a 1:1 square aspect raito image into a 2:1 aspect ratio image by scaling the document 200% larger horizontally.
 
-The inverted fisheye effect is acheived by taking your angular fisheye image and doing a polar to rectangular conversion. Then the action rotates the image 180 degrees. The final step is to convert the image from rectangular coordinates back into polar coordinates.
+### 2:1 to 1:1 Aspect Ratio Reduce
+This action will convert a 2:1 square aspect raito image into a 1:1 aspect ratio image by scaling the document 50% smaller horizontally.
 
-*Note:* It is also possible to use the "Inverse Angular Fisheye" action a 2nd time to convert a "tiny planet" image back into a normal fisheye image.
+### 50% Scale
+This action will scale the image 50% smaller using bicubic interpolation.
 
-![Inverse Angular Fishye Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Inverse-Angular-Fisheye.jpg)
-
-###Angular Fisheye to Equirectangular
-This action converts a full frame fisheye image into a 360&deg; x 180&deg; spherical panorama. This is done with the help of the Photoshop polar to rectangular coordinates filter.
-
-This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.
-
-![Angular Fisheye to Equirectangular  Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Angular-Fisheye-to-Equirectangular-Panorama-Action.jpg)
-
-###Equirectangular to Angular Fisheye
-This action converts a 360&deg; x 180&deg; spherical panorama into a full frame fisheye image. This is done with the help of the Photoshop rectangular to polar coordinates filter.
-
-This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.
-
-![Equirectangular Panorama to Angular Fisheye Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Equirectangular-Panorama-to-Angular-Fisheye-Action.jpg)
-
+### 200% Scale
+This action will scale the image 200% larger using bicubic interpolation.
 
 ###Rotate 90 Degrees
 This action will rotate the Photoshop document by 90 degrees. This is useful for changing the orientation of the angular fisheye and equirectangular images prior to the conversion.
@@ -193,6 +199,62 @@ On a 4K square or 8K square resolution image you will need to run the action mul
 ![Horizontal and Vertical Offset 1024 Pixels Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Horizontal-and-Vertical-Offset-1024-Pixels.jpg)
 
 
+##Conversions
+
+###Inverse Angular Fisheye
+This action will allow you to inverse an angular fisheye image. This is the effect "rolling" the inside of the fisheye image to the outside of the frame. This effect works best with a 360&deg; degree fisheye image.
+
+The action can be used to quickly turn a regular angular fisheye image into a "tiny planet" style image.
+
+The inverted fisheye effect is acheived by taking your angular fisheye image and doing a polar to rectangular conversion. Then the action rotates the image 180 degrees. The final step is to convert the image from rectangular coordinates back into polar coordinates.
+
+*Note:* It is also possible to use the "Inverse Angular Fisheye" action a 2nd time to convert a "tiny planet" image back into a normal fisheye image.
+
+![Inverse Angular Fishye Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Inverse-Angular-Fisheye.jpg)
+
+###Angular Fisheye to Equirectangular
+This action converts a full frame fisheye image into a 360&deg; x 180&deg; spherical panorama. This is done with the help of the Photoshop polar to rectangular coordinates filter.
+
+This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.
+
+![Angular Fisheye to Equirectangular  Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Angular-Fisheye-to-Equirectangular-Panorama-Action.jpg)
+
+###Equirectangular to Angular Fisheye
+This action converts a 360&deg; x 180&deg; spherical panorama into a full frame fisheye image. This is done with the help of the Photoshop rectangular to polar coordinates filter.
+
+This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.
+
+![Equirectangular Panorama to Angular Fisheye Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Equirectangular-Panorama-to-Angular-Fisheye-Action.jpg)
+
+
+
+###3x2 Cube Map to Cube Map
+This converts a 3x2 cube map format image into the cubic layer map panorama format.
+
+The converted cubic map faces are named:
+
+<table>
+	<tr>
+		<td>front</td>
+	</tr>
+	<tr>
+		<td>right</td>
+	</tr>
+	<tr>
+		<td>back</td>
+	</tr>
+	<tr>
+		<td>left</td>
+	</tr>
+	<tr>
+		<td>top</td>
+	</tr>
+	<tr>
+		<td>bottom</td>
+	</tr>
+</table>
+
+
 ###Vertical Cross to Cube Map
 This converts a vertical cross format panorama into the cubic map panorama format.
 
@@ -219,18 +281,176 @@ The converted cubic map faces are named:
 	</tr>
 </table>
 
+###Horiontal Cross to Cube Map
+This converts a horizontal cross format panorama into the cubic map panorama format.
 
-###Cube Map to Horizontal Tee
-This converts a cube map format image into the horizontal tee panorama format.
+The converted cubic map faces are named:
 
-The converted horizontal tee faces are located in the format:
+<table>
+	<tr>
+		<td>front</td>
+	</tr>
+	<tr>
+		<td>right</td>
+	</tr>
+	<tr>
+		<td>back</td>
+	</tr>
+	<tr>
+		<td>left</td>
+	</tr>
+	<tr>
+		<td>top</td>
+	</tr>
+	<tr>
+		<td>bottom</td>
+	</tr>
+</table>
+
+###Vertical Tee to Cube Map
+This converts a vertical tee format panorama into the cubic map panorama format.
+
+
+The converted cubic map faces are named:
+
+<table>
+	<tr>
+		<td>front</td>
+	</tr>
+	<tr>
+		<td>right</td>
+	</tr>
+	<tr>
+		<td>back</td>
+	</tr>
+	<tr>
+		<td>left</td>
+	</tr>
+	<tr>
+		<td>top</td>
+	</tr>
+	<tr>
+		<td>bottom</td>
+	</tr>
+</table>
+
+
+###Horiontal Tee to Cube Map
+This converts a horizontal tee format panorama into the cubic map panorama format.
+
+
+The converted cubic map faces are named:
+
+<table>
+	<tr>
+		<td>front</td>
+	</tr>
+	<tr>
+		<td>right</td>
+	</tr>
+	<tr>
+		<td>back</td>
+	</tr>
+	<tr>
+		<td>left</td>
+	</tr>
+	<tr>
+		<td>top</td>
+	</tr>
+	<tr>
+		<td>bottom</td>
+	</tr>
+</table>
+
+
+
+###Vertical Strip to Cube Map
+This converts a vertical strip format panorama into the cubic map panorama format.
+
+
+The converted cubic map faces are named:
+
+<table>
+	<tr>
+		<td>front</td>
+	</tr>
+	<tr>
+		<td>right</td>
+	</tr>
+	<tr>
+		<td>back</td>
+	</tr>
+	<tr>
+		<td>left</td>
+	</tr>
+	<tr>
+		<td>top</td>
+	</tr>
+	<tr>
+		<td>bottom</td>
+	</tr>
+</table>
+
+###Horiontal Strip to Cube Map
+This converts a horizontal strip format panorama into the cubic map panorama format.
+
+
+The converted cubic map faces are named:
+
+<table>
+	<tr>
+		<td>front</td>
+	</tr>
+	<tr>
+		<td>right</td>
+	</tr>
+	<tr>
+		<td>back</td>
+	</tr>
+	<tr>
+		<td>left</td>
+	</tr>
+	<tr>
+		<td>top</td>
+	</tr>
+	<tr>
+		<td>bottom</td>
+	</tr>
+</table>
+
+
+###Cube Map to Vertical Cross
+This converts a cube map format image into the vertical cross panorama format.
+
+The converted vertical cross faces are located in the format:
 
 <table>
 	<tr>
 		<td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
 	</tr>
 	<tr>
-		<td>front</td> <td>right</td> <td>back</td> <td>left</td>
+		<td>left</td> <td>front</td> <td>right</td> <td>blank</td>
+	</tr>
+	<tr>
+		<td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
+	</tr>
+	<tr>
+		<td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td> <td>blank</td>
+	</tr>
+</table>
+
+
+###Cube Map to Horizontal Cross
+This converts a cube map format image into the horizontal cross panorama format.
+
+The converted horizontal cross faces are located in the format:
+
+<table>
+	<tr>
+		<td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
+	</tr>
+	<tr>
+		<td>left</td> <td>front</td> <td>right</td> <td>back</td>
 	</tr>
 	<tr>
 		<td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
@@ -258,73 +478,21 @@ The converted vertical tee faces are located in the format:
 	</tr>
 </table>
 
-###Cube Map to Horizontal Cross
-This converts a cube map format image into the horizontal cross panorama format.
 
-The converted horizontal cross faces are located in the format:
+###Cube Map to Horizontal Tee
+This converts a cube map format image into the horizontal tee panorama format.
 
-<table>
-	<tr>
-		<td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
-	</tr>
-	<tr>
-		<td>left</td> <td>front</td> <td>right</td> <td>back</td>
-	</tr>
-	<tr>
-		<td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
-	</tr>
-</table>
-
-
-
-###Cube Map to Vertical Cross
-This converts a cube map format image into the vertical cross panorama format.
-
-The converted vertical cross faces are located in the format:
+The converted horizontal tee faces are located in the format:
 
 <table>
 	<tr>
 		<td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
 	</tr>
 	<tr>
-		<td>left</td> <td>front</td> <td>right</td> <td>blank</td>
+		<td>front</td> <td>right</td> <td>back</td> <td>left</td>
 	</tr>
 	<tr>
 		<td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
-	</tr>
-	<tr>
-		<td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td> <td>blank</td>
-	</tr>
-</table>
-
-
-
-###Cube Map to 3x2 Cube Map
-This converts a cube map format image into the 3x2 cubic map panorama format.
-
-The converted cubic map faces are located in the format:
-<table>
-	<tr>
-		<td></td>
-	</tr>
-	<tr>
-		<td>front</td> <td>right</td> <td>back</td>
-	</tr>
-	<tr>
-		<td>left</td> <td>top</td> <td>bottom</td>
-	</tr>
-</table>
-
-
-
-###Cube Map to Horizontal Strip
-This converts a cube map format image into a single row panorama format.
-
-The horizontal strip faces are located in the format:
-
-<table>
-	<tr>
-		<td>front</td> <td>right</td> <td>back</td> <td>left</td> <td>top</td> <td>bottom</td>
 	</tr>
 </table>
 
@@ -357,6 +525,20 @@ The vertical strip faces are located in the format:
 </table>
 
 
+###Cube Map to Horizontal Strip
+This converts a cube map format image into a single row panorama format.
+
+The horizontal strip faces are located in the format:
+
+<table>
+	<tr>
+		<td>front</td> <td>right</td> <td>back</td> <td>left</td> <td>top</td> <td>bottom</td>
+	</tr>
+</table>
+
+
+
+
 ##Masking and Selection
 
 ###Crop to Selection
@@ -366,6 +548,33 @@ This action will crop the Photoshop document smaller based upon the currently se
 This action will select all of the pixels on the current image layer.
 
 ![Select All Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Select-All-Action.jpg)
+
+###Save Selection
+This action will save the current selection to a new alpha channel.
+
+###Load Selection
+This action will open the "Load Selection" dialogue. You can choose to load either a layer mask, transparency channel, or an alpha channel into the current selection region.
+
+There are several advanced options in the the "Load Selection" dialogue that will let you do differencing operations ( new, add, subtract, intersect, or invert) your current selection.
+
+For example of you were painting a layer mask you could change your current selction region by subtracting the shape of a mask or alpha channel from another layer or image.
+
+###Color Range Selection
+This action will load the "Color Range" dialogue. This dialogue is useful for using a color / luma keying approach to generate a new selection region.
+
+You can preview the effects of the selction region in the dialogue or use the "Selection Preview" pop-up menu to view the results in the main Photoshop  window.
+
+
+###Inside Circular 50% Mask
+This action creates a circular layer mask that hides the area inside a circular region in the center of the current layer.
+
+![Inside Circular 50% Mask Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Inside-Circular-50-Percent-Mask-Action.jpg)
+
+###Outside Circular 50% Mask
+This action creates a circular layer mask that hides the area outside a circular region in the center of the current layer.
+
+![Outside Circular 50% Mask Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Outside-Circular-50-Percent-Mask-Action.jpg)
+
 
 ###Fisheye Alpha Channel
 This action creates a full frame circular alpha channel.
@@ -412,20 +621,12 @@ This action creates a new layer mask based upon inverting the current selection.
 
 ![Layer Mask From Inverse Selection Example 2](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Layer-Mask-From-Inverse-Selection-Action2.jpg)
 
-###Inside Circular 50% Mask
-This action creates a circular layer mask that hides the area inside a circular region in the center of the current layer.
-
-![Inside Circular 50% Mask Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Inside-Circular-50-Percent-Mask-Action.jpg)
-
-###Outside Circular 50% Mask
-This action creates a circular layer mask that hides the area outside a circular region in the center of the current layer.
-
-![Outside Circular 50% Mask Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Outside-Circular-50-Percent-Mask-Action.jpg)
 
 ###Enable Layer Mask
 This action will enable the layer mask on the current layer. This is useful for comparing the effects of transparency on the current layer.
 
 ![Enable Layer Mask Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Enable-Layer-Mask-Action.jpg)
+
 
 ###Disable Layer Mask
 This action temporarily disables the layer mask on the current layer. This is useful for comparing the effects of transparency on the current layer.
@@ -436,6 +637,8 @@ This action temporarily disables the layer mask on the current layer. This is us
 This action deletes the layer mask on the current layer.
 
 ![Delete Layer Mask Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Delete-Layer-Mask-Action.jpg)
+
+
 
 ##General Utilities
 

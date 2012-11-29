@@ -217,14 +217,14 @@ This action converts a full frame fisheye image into a 360&deg; x 180&deg; spher
 
 This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.
 
-![Angular Fisheye to Equirectangular  Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Angular-Fisheye-to-Equirectangular-Panorama-Action.jpg)
+![Angular Fisheye to Equirectangular  Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Angular-Fisheye-to-Equirectangular-Action.jpg)
 
 ###Equirectangular to Angular Fisheye
 This action converts a 360&deg; x 180&deg; spherical panorama into a full frame fisheye image. This is done with the help of the Photoshop rectangular to polar coordinates filter.
 
 This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.
 
-![Equirectangular Panorama to Angular Fisheye Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Equirectangular-Panorama-to-Angular-Fisheye-Action.jpg)
+![Equirectangular Panorama to Angular Fisheye Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Equirectangular-to-Angular-Fisheye-Action.jpg)
 
 
 

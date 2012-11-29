@@ -65,7 +65,7 @@ The actions provide tools for converting images from several common panoramic fo
 	> Layer Mask from Inverse Selection
 	> Enable Layer Mask
 	> Disable Layer Mask
-	> Delete Layer mask
+	> Delete Layer Mask
 	 
 ##General Utilities:
 
@@ -468,13 +468,13 @@ The converted vertical tee faces are located in the format:
 		<td>left</td> <td>front</td> <td>right</td>
 	</tr>
 	<tr>
-		<td>bottom</td> <td>blank</td> <td>blank</td>
+		 <td>blank</td> <td>bottom</td><td>blank</td>
 	</tr>
 	<tr>
-		<td>back (rotated 180&deg;)</td> <td>blank</td> <td>blank</td>
+		 <td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td> 
 	</tr>
 	<tr>
-		<td>top</td> <td>blank</td> <td>blank</td>
+		 <td>blank</td> <td>top</td> <td>blank</td>
 	</tr>
 </table>
 
@@ -676,12 +676,12 @@ This action will invert the image colors of the currently selected layer. This a
 
 My favorite use of this filter is to invert a grayscale layer mask. This will reverse the visible and hidden parts of the layer mask. 
 
-This action can be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action. The action can also used on a layer mask by selecting the layer mask icon in the layers tab and then clicking the button for the action.
+This action can be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action. The action can also used on a layer mask by selecting the layer mask's thumbnail icon in the layers tab and then clicking the button for the action.
 
 ###Background to Layer
 This action will convert a flattened image from the background layer mode into a floating layer that supports features like layer masks.
 
-The most common use for this action is to prepare an imported picture like a flat Targa .tga file for custom layer masks.
+The most common use for this action is to prepare an imported picture like a flat JPEG .jpg or Targa .tga file for custom layer masks.
 
 ![Background to Layer Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Background-to-Layer-Action.jpg)
 

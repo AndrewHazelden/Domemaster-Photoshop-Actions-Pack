@@ -1,5 +1,5 @@
 #Domemaster Photoshop Actions Pack
-Version 0.3 - Nov 28, 2012
+Version 0.3 - Nov 28, 2012 - Build 5
 by Andrew Hazelden
 
 

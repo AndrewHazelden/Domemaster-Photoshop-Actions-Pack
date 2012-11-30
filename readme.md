@@ -206,11 +206,11 @@ This action will allow you to inverse an angular fisheye image. This is the effe
 
 The action can be used to quickly turn a regular angular fisheye image into a "tiny planet" style image.
 
-The inverted fisheye effect is acheived by taking your angular fisheye image and doing a polar to rectangular conversion. Then the action rotates the image 180 degrees. The final step is to convert the image from rectangular coordinates back into polar coordinates.
+The inverted fisheye effect is achieved by taking your angular fisheye image and doing a polar to rectangular conversion. Then the action rotates the image 180 degrees. The final step is to convert the image from rectangular coordinates back into polar coordinates.
 
 *Note:* It is also possible to use the "Inverse Angular Fisheye" action a 2nd time to convert a "tiny planet" image back into a normal fisheye image.
 
-![Inverse Angular Fishye Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Inverse-Angular-Fisheye.jpg)
+![Inverse Angular Fisheye Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Inverse-Angular-Fisheye.jpg)
 
 ###Angular Fisheye to Equirectangular
 This action converts a full frame fisheye image into a 360&deg; x 180&deg; spherical panorama. This is done with the help of the Photoshop polar to rectangular coordinates filter.
@@ -281,7 +281,7 @@ The converted cubic map faces are named:
 	</tr>
 </table>
 
-###Horiontal Cross to Cube Map
+###Horizontal Cross to Cube Map
 This converts a horizontal cross format panorama into the cubic map panorama format.
 
 The converted cubic map faces are named:
@@ -335,7 +335,7 @@ The converted cubic map faces are named:
 </table>
 
 
-###Horiontal Tee to Cube Map
+###Horizontal Tee to Cube Map
 This converts a horizontal tee format panorama into the cubic map panorama format.
 
 
@@ -391,7 +391,7 @@ The converted cubic map faces are named:
 	</tr>
 </table>
 
-###Horiontal Strip to Cube Map
+###Horizontal Strip to Cube Map
 This converts a horizontal strip format panorama into the cubic map panorama format.
 
 
@@ -557,12 +557,12 @@ This action will open the "Load Selection" dialogue. You can choose to load eith
 
 There are several advanced options in the the "Load Selection" dialogue that will let you do differencing operations ( new, add, subtract, intersect, or invert) your current selection.
 
-For example of you were painting a layer mask you could change your current selction region by subtracting the shape of a mask or alpha channel from another layer or image.
+For example of you were painting a layer mask you could change your current selection region by subtracting the shape of a mask or alpha channel from another layer or image.
 
 ###Color Range Selection
 This action will load the "Color Range" dialogue. This dialogue is useful for using a color / luma keying approach to generate a new selection region.
 
-You can preview the effects of the selction region in the dialogue or use the "Selection Preview" pop-up menu to view the results in the main Photoshop  window.
+You can preview the effects of the selection region in the dialogue or use the "Selection Preview" pop-up menu to view the results in the main Photoshop  window.
 
 
 ###Inside Circular 50% Mask
@@ -697,7 +697,7 @@ This action will merge all of the layers in the current Photoshop document. This
 
 When an image is flattened, all of the transparent background areas in the image will be filled with a solid color.
 
-*Note:* You really want to have saved a backup of your photoshop document before you flatten the image because all of your layers are permenatly merged into a single element!
+*Note:* You really want to have saved a backup of your Photoshop document before you flatten the image because all of your layers are permanently merged into a single element!
 
 
 * * *

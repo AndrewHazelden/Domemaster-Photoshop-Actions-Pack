@@ -1,5 +1,6 @@
 #Domemaster Photoshop Actions Pack
-Version 0.3 - Nov 28, 2012 - Build 5
+**Version 0.4** - Released Nov 30, 2012
+
 by Andrew Hazelden
 
 
@@ -49,7 +50,10 @@ The actions provide tools for converting images from several common panoramic fo
 	> Cube Map to Horizontal Tee
 	> Cube Map to Vertical Strip
 	> Cube Map to Horizontal Strip
-
+	> Cube Map to New Cube Map
+	> Cube Map Rotate X:+90 Degrees
+	> Cube Map Rotate Y:+90 Degrees
+	> Cube Map Rotate Z:+90 Degrees
 	
 ##Masking and Selection:
 	> Crop to Selection
@@ -68,8 +72,8 @@ The actions provide tools for converting images from several common panoramic fo
 	> Delete Layer Mask
 	 
 ##General Utilities:
-
 	> 1x6 Guide Grid
+	> 2x2 Guide Grid
 	> 3x2 Guide Grid
 	> 3x4 Guide Grid
 	> 4x3 Guide Grid
@@ -255,6 +259,9 @@ The converted cubic map faces are named:
 </table>
 
 
+![3x2 Cube Map to Cube Map Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/3x2-cubemap-action.jpg)
+
+
 ###Vertical Cross to Cube Map
 This converts a vertical cross format panorama into the cubic map panorama format.
 
@@ -281,6 +288,10 @@ The converted cubic map faces are named:
 	</tr>
 </table>
 
+
+![Vertical Cross to Cube Map Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/vertical-cross-cubemap-action.jpg)
+
+
 ###Horizontal Cross to Cube Map
 This converts a horizontal cross format panorama into the cubic map panorama format.
 
@@ -306,6 +317,8 @@ The converted cubic map faces are named:
 		<td>bottom</td>
 	</tr>
 </table>
+
+![Horizontal Cross to Cube Map Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/horizontal-cross-cubemap-action.jpg)
 
 ###Vertical Tee to Cube Map
 This converts a vertical tee format panorama into the cubic map panorama format.
@@ -334,6 +347,7 @@ The converted cubic map faces are named:
 	</tr>
 </table>
 
+![Vertical Tee to Cube Map Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/vertical-tee-cubemap-action.jpg)
 
 ###Horizontal Tee to Cube Map
 This converts a horizontal tee format panorama into the cubic map panorama format.
@@ -362,7 +376,7 @@ The converted cubic map faces are named:
 	</tr>
 </table>
 
-
+![Horizontal Tee to Cube Map Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/horizontal-tee-cubemap-action.jpg)
 
 ###Vertical Strip to Cube Map
 This converts a vertical strip format panorama into the cubic map panorama format.
@@ -391,6 +405,8 @@ The converted cubic map faces are named:
 	</tr>
 </table>
 
+![Vertical Strip to Cube Map Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/vertical-strip-cubemap-action.jpg)
+
 ###Horizontal Strip to Cube Map
 This converts a horizontal strip format panorama into the cubic map panorama format.
 
@@ -418,6 +434,15 @@ The converted cubic map faces are named:
 	</tr>
 </table>
 
+![Horizontal Strip to Cube Map Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/horizontal-strip-cubemap-action.jpg)
+
+
+###Cube Map to 3x2 Cube Map
+
+This converts a cube map format image into the 3x2 panorama format.
+
+![Cube Map to 3x2 Cube Map Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-3x2-cube-action.jpg)
+
 
 ###Cube Map to Vertical Cross
 This converts a cube map format image into the vertical cross panorama format.
@@ -426,18 +451,20 @@ The converted vertical cross faces are located in the format:
 
 <table>
 	<tr>
-		<td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
+		<td>blank</td> <td>top</td> <td>blank</td>
 	</tr>
 	<tr>
-		<td>left</td> <td>front</td> <td>right</td> <td>blank</td>
+		<td>left</td> <td>front</td> <td>right</td>
 	</tr>
 	<tr>
-		<td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
+		<td>blank</td> <td>bottom</td> <td>blank</td>
 	</tr>
 	<tr>
-		<td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td> <td>blank</td>
+		<td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td>
 	</tr>
 </table>
+
+![Cube Map to Vertical Cross Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-vertical-cross-action.jpg)
 
 
 ###Cube Map to Horizontal Cross
@@ -457,6 +484,7 @@ The converted horizontal cross faces are located in the format:
 	</tr>
 </table>
 
+![Cube Map to Horizontal Cross Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-horizontal-cross-action.jpg)
 
 ###Cube Map to Vertical Tee
 This converts a cube map format image into the vertical tee panorama format.
@@ -478,6 +506,7 @@ The converted vertical tee faces are located in the format:
 	</tr>
 </table>
 
+![Cube Map to Vertical Tee Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-vertical-tee-action.jpg)
 
 ###Cube Map to Horizontal Tee
 This converts a cube map format image into the horizontal tee panorama format.
@@ -496,7 +525,7 @@ The converted horizontal tee faces are located in the format:
 	</tr>
 </table>
 
-
+![Cube Map to Horizontal Tee Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-horizontal-tee-action.jpg)
 
 ###Cube Map to Vertical Strip
 This converts a cube map format image into a single column panorama format.
@@ -524,6 +553,7 @@ The vertical strip faces are located in the format:
 	</tr>
 </table>
 
+![Cube Map to Vertical Strip Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-vertical-strip-action.jpg)
 
 ###Cube Map to Horizontal Strip
 This converts a cube map format image into a single row panorama format.
@@ -536,8 +566,44 @@ The horizontal strip faces are located in the format:
 	</tr>
 </table>
 
+![Cube Map to Horizontal Strip Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-horizontal-strip-action.jpg)
 
 
+###Cube Map to New Cube Map
+
+This action will copy the cube map "front", "right", "back", "left", "top", and "bottom" layers from your current Photoshop document into a new Photoshop document.
+
+
+###Cube Map Rotate X:+90 Degrees
+
+This action will rotate the cube map panorama by 90 degrees on the X-axis. This has the effect of turning the front "view" upwards towards the sky.
+
+Tip: If you want to rotate a cross style, tee style, 3x2 cubic map, or strip style pano you need to convert them to the layered "cube map" format first using the actions in the Conversions Actions tab group.
+
+![Cube Map Rotate X:+90 Degrees Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-rotate-x90-action.jpg)
+
+![Cube Map Rotate X:+90 Degrees Example 2](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-rotate-x90-layers.jpg)
+
+
+###Cube Map Rotate Y:+90 Degrees
+
+This action will rotate the cube map panorama by 90 degrees on the Y-axis. The has the effect of turning the front "view" towards the left.
+
+Tip: If you want to rotate a cross style, tee style, 3x2 cubic map, or strip style pano you need to convert them to the layered "cube map" format first using the actions in the Conversions Actions tab group.
+
+![Cube Map Rotate Y:+90 Degrees Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-rotate-y90-action.jpg)
+
+![Cube Map Rotate Y:+90 Degrees Example 2](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-rotate-y90-layers.jpg)
+
+###Cube Map Rotate Z:+90 Degrees
+
+This action will rotate the cube map panorama by 90 degrees on the Z-axis. This has the effect of rotating the front "view" 90 degrees clockwise to the right. 
+
+Tip: If you want to rotate a cross style, tee style, 3x2 cubic map, or strip style pano you need to convert them to the layered "cube map" format first using the actions in the Conversions Actions tab group.
+
+![Cube Map Rotate Z:+90 Degrees Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-rotate-z90-action.jpg)
+
+![Cube Map Rotate Z:+90 Degrees Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-rotate-z90-layers.jpg)
 
 ##Masking and Selection
 
@@ -704,6 +770,6 @@ When an image is flattened, all of the transparent background areas in the image
 
 Actions Created by Andrew Hazelden. (c) copyright 2012.
 
-Email: andrew@andrewhazelden.com
+Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)
 
-Blog: http://www.andrewhazelden.com
+Blog: [http://www.andrewhazelden.com](http://www.andrewhazelden.com)

@@ -1,5 +1,5 @@
 #Domemaster Photoshop Actions Pack
-**Version 0.4** - Released Nov 30, 2012
+**Version 0.5** - Released Feb 12, 2013
 
 by Andrew Hazelden
 
@@ -15,76 +15,78 @@ The actions provide tools for converting images from several common panoramic fo
 
 
 
-#Action List
+#Action List  
 
 ##Transforms:
-	> 1:1 to 2:1 Aspect Ratio Expand
-	> 2:1 to 1:1 Aspect Ratio Reduce
-	> 50% Scale
-	> 200% Scale
-	> Rotate 90 Degrees
-	> Rotate 180 Degrees
-	> Rotate 270 Degrees
-	> Flip Vertical
-	> Flop Horizontal
-	> Horizontal Offset 1024 pixels
-	> Vertical Offset 1024 pixels
-	> Horizontal and Vertical Offset 1024 pixels
+  > 1:1 to 2:1 Aspect Ratio Expand  
+  > 2:1 to 1:1 Aspect Ratio Reduce  
+  > 50% Scale  
+  > 200% Scale  
+  > Rotate 90 Degrees  
+  > Rotate 180 Degrees  
+  > Rotate 270 Degrees  
+  > Flip Vertical  
+  > Flop Horizontal  
+  > Horizontal Offset 1024 pixels   
+  > Vertical Offset 1024 pixels  
+  > Horizontal and Vertical Offset 1024 pixels  
 
 
 ##Conversions
-	> Inverse Angular Fisheye
-	> Angular Fisheye to Equirectangular
-	> Equirectangular to Angular Fisheye
-	> 3x2 to Cube Map
-	> Vertical Cross to Cube Map
-	> Horizontal Cross to Cube Map
-	> Vertical Tee to Cube Map
-	> Horizontal Tee to Cube Map
-	> Vertical Strip to Cube Map
-	> Horizontal Strip to Cube Map
-	> Cube Map to 3x2 Cube Map
-	> Cube Map to Vertical Cross
-	> Cube Map to Horizontal Cross
-	> Cube Map to Vertical Tee
-	> Cube Map to Horizontal Tee
-	> Cube Map to Vertical Strip
-	> Cube Map to Horizontal Strip
-	> Cube Map to New Cube Map
-	> Cube Map Rotate X:+90 Degrees
-	> Cube Map Rotate Y:+90 Degrees
-	> Cube Map Rotate Z:+90 Degrees
-	
+  > Inverse Angular Fisheye  
+  > Angular Fisheye to Equirectangular  
+  > Angular Fisheye to 2:1 Equirectangular  
+  > Equirectangular to Angular Fisheye  
+  > 2:1 Equirectangular to Angular Fisheye  
+  > 3x2 Cube Map to Cube Map  
+  > Vertical Cross to Cube Map  
+  > Horizontal Cross to Cube Map  
+  > Vertical Tee to Cube Map  
+  > Horizontal Tee to Cube Map  
+  > Vertical Strip to Cube Map  
+  > Horizontal Strip to Cube Map  
+  > Cube Map to 3x2 Cube Map  
+  > Cube Map to Vertical Cross  
+  > Cube Map to Horizontal Cross  
+  > Cube Map to Vertical Tee  
+  > Cube Map to Horizontal Tee  
+  > Cube Map to Vertical Strip  
+  > Cube Map to Horizontal Strip  
+  > Cube Map to New Cube Map  
+  > Cube Map Rotate X:+90 Degrees  
+  > Cube Map Rotate Y:+90 Degrees  
+  > Cube Map Rotate Z:+90 Degrees  
+  
 ##Masking and Selection:
-	> Crop to Selection
-	> Select All
-	> Save Selection
-	> Load Selection
-	> Color Range Selection
-	> Inside Circular 50% Mask
-	> Outside Circular 50% Mask
-	> Fisheye Alpha Channel
-	> Fisheye Layer Mask
-	> Layer Mask from Selection
-	> Layer Mask from Inverse Selection
-	> Enable Layer Mask
-	> Disable Layer Mask
-	> Delete Layer Mask
-	 
-##General Utilities:
-	> 1x6 Guide Grid
-	> 2x2 Guide Grid
-	> 3x2 Guide Grid
-	> 3x4 Guide Grid
-	> 4x3 Guide Grid
-	> 4x4 Guide Grid
-	> 6x1 Guide Grid
-	> Clear Guides
-	> Invert Colors
-	> Background to Layer
-	> Merge Visible
-	> Flatten Image
-	 
+  > Crop to Selection  
+  > Select All  
+  > Save Selection  
+  > Load Selection  
+  > Color Range Selection  
+  > Inside Circular 50% Mask  
+  > Outside Circular 50% Mask  
+  > Fisheye Alpha Channel  
+  > Fisheye Layer Mask  
+  > Layer Mask from Selection  
+  > Layer Mask from Inverse Selection  
+  > Enable Layer Mask  
+  > Disable Layer Mask  
+  > Delete Layer Mask  
+   
+##General Utilities: 
+  > 1x6 Guide Grid  
+  > 2x2 Guide Grid  
+  > 3x2 Guide Grid  
+  > 3x4 Guide Grid  
+  > 4x3 Guide Grid  
+  > 4x4 Guide Grid  
+  > 6x1 Guide Grid  
+  > Clear Guides  
+  > Invert Colors  
+  > Background to Layer  
+  > Merge Visible  
+  > Flatten Image  
+   
 
 #Installation Instructions
 
@@ -141,10 +143,10 @@ The "Transforms" actions are yellow.
 
 
 ### 1:1 to 2:1 Aspect Ratio Expand
-This action will convert a 1:1 square aspect raito image into a 2:1 aspect ratio image by scaling the document 200% larger horizontally.
+This action will convert a 1:1 square aspect ratio image into a 2:1 aspect ratio image by scaling the document 200% larger horizontally.
 
 ### 2:1 to 1:1 Aspect Ratio Reduce
-This action will convert a 2:1 square aspect raito image into a 1:1 aspect ratio image by scaling the document 50% smaller horizontally.
+This action will convert a 2:1 square aspect ratio image into a 1:1 aspect ratio image by scaling the document 50% smaller horizontally.
 
 ### 50% Scale
 This action will scale the image 50% smaller using bicubic interpolation.
@@ -212,24 +214,58 @@ The action can be used to quickly turn a regular angular fisheye image into a "t
 
 The inverted fisheye effect is achieved by taking your angular fisheye image and doing a polar to rectangular conversion. Then the action rotates the image 180 degrees. The final step is to convert the image from rectangular coordinates back into polar coordinates.
 
+This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's "Polar to Rectangular" image filter.
+
 *Note:* It is also possible to use the "Inverse Angular Fisheye" action a 2nd time to convert a "tiny planet" image back into a normal fisheye image.
 
 ![Inverse Angular Fisheye Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Inverse-Angular-Fisheye.jpg)
 
 ###Angular Fisheye to Equirectangular
-This action converts a full frame fisheye image into a 360&deg; x 180&deg; spherical panorama. This is done with the help of the Photoshop polar to rectangular coordinates filter.
+This action converts a full frame fisheye image into a 360&deg; x 180&deg; spherical panorama with a ratio of 1:1. This means a fulldome image with a 2048x2048 resolution will be converted to a 2048x2048 resolution lat/long image. This is done with the help of the Photoshop polar to rectangular coordinates filter.
 
 This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.
 
-![Angular Fisheye to Equirectangular  Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Angular-Fisheye-to-Equirectangular-Action.jpg)
+This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's "Polar to Rectangular" image filter.
+
+Tip: If you see a visible seam artifact at the 0&deg; mark after converting to/from an angular fisheye format you can try flattening the image before performing the conversions. 
+
+![Angular Fisheye to Equirectangular Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Angular-Fisheye-to-Equirectangular-Action.jpg)
+
+###Angular Fisheye to 2:1 Equirectangular
+This action converts a full frame fisheye image into a 360&deg; x 180&deg; spherical panorama with a ratio of 2:1. This means a fulldome image with a 2048x2048 resolution will be converted to a 4096x2048 resolution lat/long image. This is done with the help of the Photoshop polar to rectangular coordinates filter.
+
+This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.
+
+This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's "Polar to Rectangular" image filter.
+
+Tip: If you see a visible seam artifact at the 0&deg; mark after converting to/from an angular fisheye format you can try flattening the image before performing the conversions. 
+
+![Angular Fisheye to 2:1 Equirectangular Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Angular-Fisheye-to-2to1-Equirectangular-Action.jpg)
+
 
 ###Equirectangular to Angular Fisheye
-This action converts a 360&deg; x 180&deg; spherical panorama into a full frame fisheye image. This is done with the help of the Photoshop rectangular to polar coordinates filter.
+This action converts a 360&deg; x 180&deg; spherical panorama into a full frame fisheye image. This means a lat/long image with a 1:1 aspect ratio like 2048x2048 pixels will be converted to a 2048x2048 angular fisheye image. This is done with the help of the Photoshop rectangular to polar coordinates filter.
 
 This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.
+
+This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's "Polar to Rectangular" image filter.
+
+Tip: If you see a visible seam artifact at the 0&deg; mark after converting to/from an angular fisheye format you can try flattening the image before performing the conversions. 
+
 
 ![Equirectangular Panorama to Angular Fisheye Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Equirectangular-to-Angular-Fisheye-Action.jpg)
 
+###2:1 Equirectangular to Angular Fisheye
+This action converts a 360&deg; x 180&deg; spherical panorama into a full frame fisheye image. This means a lat/long image with a 2:1 aspect ratio like 4096x2048 pixels will be converted to a 2048x2048 angular fisheye image. This is done with the help of the Photoshop rectangular to polar coordinates filter.
+
+This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.
+
+This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's "Polar to Rectangular" image filter.
+
+Tip: If you see a visible seam artifact at the 0&deg; mark after converting to/from an angular fisheye format you can try flattening the image before performing the conversions. 
+
+
+![2:1 Equirectangular Panorama to Angular Fisheye Example 1](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/Equirectangular-to-Angular-Fisheye-Action.jpg)
 
 
 ###3x2 Cube Map to Cube Map
@@ -238,24 +274,24 @@ This converts a 3x2 cube map format image into the cubic layer map panorama form
 The converted cubic map faces are named:
 
 <table>
-	<tr>
-		<td>front</td>
-	</tr>
-	<tr>
-		<td>right</td>
-	</tr>
-	<tr>
-		<td>back</td>
-	</tr>
-	<tr>
-		<td>left</td>
-	</tr>
-	<tr>
-		<td>top</td>
-	</tr>
-	<tr>
-		<td>bottom</td>
-	</tr>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
 </table>
 
 
@@ -268,24 +304,24 @@ This converts a vertical cross format panorama into the cubic map panorama forma
 The converted cubic map faces are named:
 
 <table>
-	<tr>
-		<td>front</td>
-	</tr>
-	<tr>
-		<td>right</td>
-	</tr>
-	<tr>
-		<td>back</td>
-	</tr>
-	<tr>
-		<td>left</td>
-	</tr>
-	<tr>
-		<td>top</td>
-	</tr>
-	<tr>
-		<td>bottom</td>
-	</tr>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
 </table>
 
 
@@ -298,24 +334,24 @@ This converts a horizontal cross format panorama into the cubic map panorama for
 The converted cubic map faces are named:
 
 <table>
-	<tr>
-		<td>front</td>
-	</tr>
-	<tr>
-		<td>right</td>
-	</tr>
-	<tr>
-		<td>back</td>
-	</tr>
-	<tr>
-		<td>left</td>
-	</tr>
-	<tr>
-		<td>top</td>
-	</tr>
-	<tr>
-		<td>bottom</td>
-	</tr>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
 </table>
 
 ![Horizontal Cross to Cube Map Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/horizontal-cross-cubemap-action.jpg)
@@ -327,24 +363,24 @@ This converts a vertical tee format panorama into the cubic map panorama format.
 The converted cubic map faces are named:
 
 <table>
-	<tr>
-		<td>front</td>
-	</tr>
-	<tr>
-		<td>right</td>
-	</tr>
-	<tr>
-		<td>back</td>
-	</tr>
-	<tr>
-		<td>left</td>
-	</tr>
-	<tr>
-		<td>top</td>
-	</tr>
-	<tr>
-		<td>bottom</td>
-	</tr>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
 </table>
 
 ![Vertical Tee to Cube Map Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/vertical-tee-cubemap-action.jpg)
@@ -356,24 +392,24 @@ This converts a horizontal tee format panorama into the cubic map panorama forma
 The converted cubic map faces are named:
 
 <table>
-	<tr>
-		<td>front</td>
-	</tr>
-	<tr>
-		<td>right</td>
-	</tr>
-	<tr>
-		<td>back</td>
-	</tr>
-	<tr>
-		<td>left</td>
-	</tr>
-	<tr>
-		<td>top</td>
-	</tr>
-	<tr>
-		<td>bottom</td>
-	</tr>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
 </table>
 
 ![Horizontal Tee to Cube Map Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/horizontal-tee-cubemap-action.jpg)
@@ -381,28 +417,29 @@ The converted cubic map faces are named:
 ###Vertical Strip to Cube Map
 This converts a vertical strip format panorama into the cubic map panorama format.
 
+The input image is expected to be in a aspect 1:6 ratio. If the input image is 1024x6,144 pixel image the output will be a 1024x1024 pixel layered photoshop image.
 
 The converted cubic map faces are named:
 
 <table>
-	<tr>
-		<td>front</td>
-	</tr>
-	<tr>
-		<td>right</td>
-	</tr>
-	<tr>
-		<td>back</td>
-	</tr>
-	<tr>
-		<td>left</td>
-	</tr>
-	<tr>
-		<td>top</td>
-	</tr>
-	<tr>
-		<td>bottom</td>
-	</tr>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
 </table>
 
 ![Vertical Strip to Cube Map Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/vertical-strip-cubemap-action.jpg)
@@ -410,31 +447,88 @@ The converted cubic map faces are named:
 ###Horizontal Strip to Cube Map
 This converts a horizontal strip format panorama into the cubic map panorama format.
 
+The input image is expected to be in a aspect 6:1 ratio. If the input image is 6,144x1024 pixel image the output will be a 1024x1024 pixel layered photoshop image.
 
 The converted cubic map faces are named:
 
 <table>
-	<tr>
-		<td>front</td>
-	</tr>
-	<tr>
-		<td>right</td>
-	</tr>
-	<tr>
-		<td>back</td>
-	</tr>
-	<tr>
-		<td>left</td>
-	</tr>
-	<tr>
-		<td>top</td>
-	</tr>
-	<tr>
-		<td>bottom</td>
-	</tr>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
 </table>
 
 ![Horizontal Strip to Cube Map Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/horizontal-strip-cubemap-action.jpg)
+
+
+###Mental Ray Horizontal Strip to Cube Map
+This converts a mental ray `mib_lookup_cube1` horizontal strip format panorama into the cubic map panorama format.
+
+The input image is expected to be in a aspect 6:1 ratio in the mental ray cubic frame layout. If the input image is 6,144x1024 pixel image the output will be a 1024x1024 pixel layered photoshop image.
+
+The input image is in the mental ray `mib_lookup_cube1` horizontal strip image format:
+
+<table>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+  <tr>
+    <td>top (flipped vertically)</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>front</td>
+  </tr>
+</table>
+
+
+
+The output from this action is a layered Photoshop document with cubic faces named:
+
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+
+![Mental Ray Horizontal Strip to Cube Map Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/mr-horizontal-strip-to-cubemap-action.jpg)
 
 
 ###Cube Map to 3x2 Cube Map
@@ -450,18 +544,18 @@ This converts a cube map format image into the vertical cross panorama format.
 The converted vertical cross faces are located in the format:
 
 <table>
-	<tr>
-		<td>blank</td> <td>top</td> <td>blank</td>
-	</tr>
-	<tr>
-		<td>left</td> <td>front</td> <td>right</td>
-	</tr>
-	<tr>
-		<td>blank</td> <td>bottom</td> <td>blank</td>
-	</tr>
-	<tr>
-		<td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td>
-	</tr>
+  <tr>
+    <td>blank</td> <td>top</td> <td>blank</td>
+  </tr>
+  <tr>
+    <td>left</td> <td>front</td> <td>right</td>
+  </tr>
+  <tr>
+    <td>blank</td> <td>bottom</td> <td>blank</td>
+  </tr>
+  <tr>
+    <td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td>
+  </tr>
 </table>
 
 ![Cube Map to Vertical Cross Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-vertical-cross-action.jpg)
@@ -473,15 +567,15 @@ This converts a cube map format image into the horizontal cross panorama format.
 The converted horizontal cross faces are located in the format:
 
 <table>
-	<tr>
-		<td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
-	</tr>
-	<tr>
-		<td>left</td> <td>front</td> <td>right</td> <td>back</td>
-	</tr>
-	<tr>
-		<td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
-	</tr>
+  <tr>
+    <td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
+  </tr>
+  <tr>
+    <td>left</td> <td>front</td> <td>right</td> <td>back</td>
+  </tr>
+  <tr>
+    <td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
+  </tr>
 </table>
 
 ![Cube Map to Horizontal Cross Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-horizontal-cross-action.jpg)
@@ -492,18 +586,18 @@ This converts a cube map format image into the vertical tee panorama format.
 The converted vertical tee faces are located in the format:
 
 <table>
-	<tr>
-		<td>left</td> <td>front</td> <td>right</td>
-	</tr>
-	<tr>
-		 <td>blank</td> <td>bottom</td><td>blank</td>
-	</tr>
-	<tr>
-		 <td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td> 
-	</tr>
-	<tr>
-		 <td>blank</td> <td>top</td> <td>blank</td>
-	</tr>
+  <tr>
+    <td>left</td> <td>front</td> <td>right</td>
+  </tr>
+  <tr>
+     <td>blank</td> <td>bottom</td><td>blank</td>
+  </tr>
+  <tr>
+     <td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td> 
+  </tr>
+  <tr>
+     <td>blank</td> <td>top</td> <td>blank</td>
+  </tr>
 </table>
 
 ![Cube Map to Vertical Tee Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-vertical-tee-action.jpg)
@@ -514,15 +608,15 @@ This converts a cube map format image into the horizontal tee panorama format.
 The converted horizontal tee faces are located in the format:
 
 <table>
-	<tr>
-		<td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
-	</tr>
-	<tr>
-		<td>front</td> <td>right</td> <td>back</td> <td>left</td>
-	</tr>
-	<tr>
-		<td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
-	</tr>
+  <tr>
+    <td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
+  </tr>
+  <tr>
+    <td>front</td> <td>right</td> <td>back</td> <td>left</td>
+  </tr>
+  <tr>
+    <td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
+  </tr>
 </table>
 
 ![Cube Map to Horizontal Tee Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-horizontal-tee-action.jpg)
@@ -533,24 +627,24 @@ This converts a cube map format image into a single column panorama format.
 The vertical strip faces are located in the format:
 
 <table>
-	<tr>
-		<td>front</td>
-	</tr>
-	<tr>
-		<td>right</td>
-	</tr>
-	<tr>
-		<td>back</td>
-	</tr>
-	<tr>
-		<td>left</td>
-	</tr>
-	<tr>
-		<td>top</td>
-	</tr>
-	<tr>
-		<td>bottom</td>
-	</tr>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
 </table>
 
 ![Cube Map to Vertical Strip Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-vertical-strip-action.jpg)
@@ -561,12 +655,70 @@ This converts a cube map format image into a single row panorama format.
 The horizontal strip faces are located in the format:
 
 <table>
-	<tr>
-		<td>front</td> <td>right</td> <td>back</td> <td>left</td> <td>top</td> <td>bottom</td>
-	</tr>
+  <tr>
+    <td>front</td> <td>right</td> <td>back</td> <td>left</td> <td>top</td> <td>bottom</td>
+  </tr>
 </table>
 
 ![Cube Map to Horizontal Strip Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-horizontal-strip-action.jpg)
+
+
+###Cube Map to Mental Ray Horizontal Strip
+This converts a cube map format image into a single row panorama format.
+
+This converts a layered cubic map Photoshop document into a mental ray `mib_lookup_cube1` horizontal strip format panorama.
+
+The input image is expected to be in a 1:1 aspect ratio. If the input image is a layered 1024x1024 pixel image the output will be a 6,144x1024 pixel image with a 6:1 aspect ratio.
+
+The input for this action is a layered Photoshop document with cubic faces named:
+
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+
+The output image is in the mental ray `mib_lookup_cube1` horizontal strip image layout with the following cubic map face order:
+
+<table>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+  <tr>
+    <td>top (flipped vertically)</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>front</td>
+  </tr>
+</table>
+
+
+
+![Cube Map to Mental Ray Horizontal Strip Example](https://raw.github.com/AndrewHazelden/Domemaster-Photoshop-Actions-Pack/master/Screenshots/Actions-Previews/cubemap-to-mr-horizontal-strip-action.jpg)
 
 
 ###Cube Map to New Cube Map
@@ -768,7 +920,7 @@ When an image is flattened, all of the transparent background areas in the image
 
 * * *
 
-Actions Created by Andrew Hazelden. (c) copyright 2012.
+Actions Created by Andrew Hazelden. (c) copyright 2013.
 
 Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)
 

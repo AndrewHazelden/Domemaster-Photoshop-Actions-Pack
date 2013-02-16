@@ -1,5 +1,5 @@
 #Domemaster Photoshop Actions Pack
-**Version 0.5** - Released Feb 12, 2013
+**Version 0.6** - Released Feb 16, 2013
 
 by Andrew Hazelden
 
@@ -487,7 +487,7 @@ The input image is in the mental ray `mib_lookup_cube1` horizontal strip image f
     <td>left</td>
   </tr>
   <tr>
-    <td>back</td>
+    <td>right</td>
   </tr>
   <tr>
     <td>bottom</td>
@@ -496,7 +496,7 @@ The input image is in the mental ray `mib_lookup_cube1` horizontal strip image f
     <td>top (flipped vertically)</td>
   </tr>
   <tr>
-    <td>right</td>
+    <td>back</td>
   </tr>
   <tr>
     <td>front</td>
@@ -700,7 +700,7 @@ The output image is in the mental ray `mib_lookup_cube1` horizontal strip image 
     <td>left</td>
   </tr>
   <tr>
-    <td>back</td>
+    <td>right</td>
   </tr>
   <tr>
     <td>bottom</td>
@@ -709,7 +709,7 @@ The output image is in the mental ray `mib_lookup_cube1` horizontal strip image 
     <td>top (flipped vertically)</td>
   </tr>
   <tr>
-    <td>right</td>
+    <td>back</td>
   </tr>
   <tr>
     <td>front</td>

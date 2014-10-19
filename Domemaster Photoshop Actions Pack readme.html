@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>readme</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Domemaster Photoshop Actions Pack</h1>
+<p><strong>Version 1</strong> - Released October 19, 2014</p>
+<p>by Andrew Hazelden</p>
+<h2>About the Software</h2>
+<p>The Domemaster Photoshop Actions Pack is a collection of custom Adobe Photoshop actions that were designed to speed up the fulldome content creation workflow. </p>
+<p>The actions provide tools for converting images from several common panoramic formats such as angular fisheye, equirectangular, and cube map panoramas, and general utilities for fulldome production.</p>
+<p><img src="Screenshots/photoshop-actions-list.png" alt="Domemaster Photoshop Actions Pack" /></p>
+<h1>Action List</h1>
+<h2>Transforms:</h2>
+<blockquote>
+<p>1:1 to 2:1 Aspect Ratio Expand<br />
+2:1 to 1:1 Aspect Ratio Reduce<br />
+50% Scale<br />
+200% Scale<br />
+Rotate 90 Degrees<br />
+Rotate 180 Degrees<br />
+Rotate 270 Degrees<br />
+Flip Vertical<br />
+Flop Horizontal<br />
+Horizontal Offset 1024 pixels <br />
+Vertical Offset 1024 pixels<br />
+Horizontal and Vertical Offset 1024 pixels  
+</p>
+</blockquote>
+<h2>Conversions</h2>
+<blockquote>
+<p>Inverse Angular Fisheye<br />
+Angular Fisheye to Equirectangular<br />
+Angular Fisheye to 2:1 Equirectangular<br />
+180&deg; Domemaster to 2:1 Equirectangular<br />
+Equirectangular to Angular Fisheye<br />
+2:1 Equirectangular to Angular Fisheye<br />
+2:1 Equirectangular to 180&deg; Domemaster <br />
+3x2 Cube Map to Cube Map<br />
+Vertical Cross to Cube Map<br />
+Horizontal Cross to Cube Map<br />
+Vertical Tee to Cube Map<br />
+Horizontal Tee to Cube Map<br />
+Vertical Strip to Cube Map<br />
+Horizontal Strip to Cube Map<br />
+Cube Map to 3x2 Cube Map<br />
+Cube Map to Vertical Cross<br />
+Cube Map to Horizontal Cross<br />
+Cube Map to Vertical Tee<br />
+Cube Map to Horizontal Tee<br />
+Cube Map to Vertical Strip<br />
+Cube Map to Horizontal Strip<br />
+Cube Map to New Cube Map<br />
+Cube Map Rotate X:+90 Degrees<br />
+Cube Map Rotate Y:+90 Degrees<br />
+Cube Map Rotate Z:+90 Degrees  
+</p>
+</blockquote>
+<h2>Masking and Selection:</h2>
+<blockquote>
+<p>Crop to Selection<br />
+Select All<br />
+Save Selection<br />
+Load Selection<br />
+Color Range Selection<br />
+Inside Circular 50% Mask<br />
+Outside Circular 50% Mask<br />
+Fisheye Alpha Channel<br />
+Fisheye Layer Mask<br />
+Layer Mask from Selection<br />
+Layer Mask from Inverse Selection<br />
+Enable Layer Mask<br />
+Disable Layer Mask<br />
+Delete Layer Mask<br />
+Black Matting BG</p>
+</blockquote>
+<h2>General Utilities:</h2>
+<blockquote>
+<p>1x6 Guide Grid<br />
+2x2 Guide Grid<br />
+3x2 Guide Grid<br />
+3x4 Guide Grid<br />
+4x3 Guide Grid<br />
+4x4 Guide Grid<br />
+6x1 Guide Grid<br />
+Clear Guides<br />
+Invert Colors<br />
+Background to Layer<br />
+Merge Visible<br />
+Flatten Image  
+</p>
+</blockquote>
+<h1>Installation Instructions</h1>
+<p>The Domemaster Photoshop Actions Pack is comptaible with Photoshop CS3 to CS6 on both Mac and Windows.</p>
+<h2>Step 1. Open the Actions Tab</h2>
+<p>Start by opening Adobe Photoshop. Navigate to the &quot;Window&quot; menu, and select the &quot;Actions&quot; menu item.</p>
+<p><img src="Screenshots/1.install-window-actions-menu-item.png" alt="Open the Actions Tab" /></p>
+<h2>Step 2. Load the actions.</h2>
+<p>Click on the Actions tab pop-up menu located at the top right of the actions tab.</p>
+<p>Select the &quot;Load Actions&quot; menu item.</p>
+<p><img src="Screenshots/2.load-actions-menu-item.png" alt="Select the &quot;Load Actions...&quot; menu item to import the actions pack" /></p>
+<p>In the Load dialogue window select the action files &quot;Conversions.atn&quot;, &quot;General Utilties.atn&quot;, &quot;Masking and Selection.atn&quot;, and &quot;Transforms.atn&quot;.</p>
+<p>Click the Load button to open the action files.</p>
+<p><img src="Screenshots/3.load-actions-dialogue.png" alt="Select the actions files in the Load dialogue window and click load." /></p>
+<p>The Domemaster Photoshop Actions Pack files will be loaded into the Actions Tab.</p>
+<p><img src="Screenshots/4.actions-loaded.png" alt="The Domemaster Photoshop Actions Pack is now loaded in the Actions tab." /></p>
+<h2>Step 3. Switch to Button Mode</h2>
+<p>If you want to make it easier to run the actions you can switch the Actions tab to &quot;Button Mode&quot;. This will make each action item a clickable button.</p>
+<p>Click on the Actions tab pop-up menu located at the top right of the actions tab.</p>
+<p>Select the first item in the menu labeled &quot;Button Mode&quot;. Your view will switch from a long list into a colorfull grid of labeled buttons.
+<img src="Screenshots/5.switch-to-button-mode.png" alt="Switch the Actions tab to the to button display  mode" /></p>
+<p>To make it easier to find things, the actions groups are color coded:</p>
+<p>The &quot;Conversions&quot; actions are blue. </p>
+<p>The &quot;General Utilties&quot; actions are violet. </p>
+<p>The &quot;Masking and Selection&quot; actions are green.</p>
+<p>The &quot;Transforms&quot; actions are yellow.</p>
+<h1>Tool Descriptions</h1>
+<h2>Transforms</h2>
+<h3>1:1 to 2:1 Aspect Ratio Expand</h3>
+<p>This action will convert a 1:1 square aspect ratio image into a 2:1 aspect ratio image by scaling the document 200% larger horizontally.</p>
+<h3>2:1 to 1:1 Aspect Ratio Reduce</h3>
+<p>This action will convert a 2:1 square aspect ratio image into a 1:1 aspect ratio image by scaling the document 50% smaller horizontally.</p>
+<h3>50% Scale</h3>
+<p>This action will scale the image 50% smaller using bicubic interpolation.</p>
+<h3>200% Scale</h3>
+<p>This action will scale the image 200% larger using bicubic interpolation.</p>
+<h3>Rotate 90 Degrees</h3>
+<p>This action will rotate the Photoshop document by 90 degrees. This is useful for changing the orientation of the angular fisheye and equirectangular images prior to the conversion.</p>
+<p><img src="Screenshots/Actions-Previews/Rotate-90-Degrees-Action.jpg" alt="Rotate 90 Degrees Example 1" /></p>
+<p><img src="Screenshots/Actions-Previews/Rotate-90-Degrees-Action2.jpg" alt="Rotate 90 Degrees Example 2" /></p>
+<h3>Rotate 180 Degrees</h3>
+<p>This action will rotate the Photoshop document by 180 degrees. This is useful for changing the up orientation of the angular fisheye and equirectangular images prior to the conversion.</p>
+<p><img src="Screenshots/Actions-Previews/Rotate-180-Degrees-Action.jpg" alt="Rotate 180 Degrees Example 1" /></p>
+<p><img src="Screenshots/Actions-Previews/Rotate-180-Degrees-Action2.jpg" alt="Rotate 180 Degrees Example 2" /></p>
+<h3>Rotate 270 Degrees</h3>
+<p>This action will rotate the Photoshop document by 270 degrees. This is useful for changing the up orientation of the angular fisheye and equirectangular images prior to the conversion.</p>
+<h3>Flip Vertical</h3>
+<p>This flips the image upside down.</p>
+<h3>Flop Horizontal</h3>
+<p>This flops the image left and right.</p>
+<h3>Horizontal Offset 1024 Pixels</h3>
+<p>This action slides the image 1024 pixels to the right and wraps the right side of the image around to the left side.</p>
+<p>This is useful for changing the content in the center of an equirectangular image. This is also useful for fixing image seams and preparing tiling textures</p>
+<p><img src="Screenshots/Actions-Previews/Horizontal-Offset-1024-Pixels-Action.jpg" alt="Horizontal Offset 1024 Pixels Example 1" /></p>
+<p><img src="Screenshots/Actions-Previews/Horizontal-Offset-1024-Pixels-Action2.jpg" alt="Horizontal Offset 1024 Pixels Example 2" /></p>
+<h3>Vertical Offset 1024 Pixels</h3>
+<p>This action slides the image upwards by 1024 pixels and wraps the top side of the image around to the bottom side. This is useful for fixing image seams and preparing tiling textures.</p>
+<p><img src="Screenshots/Actions-Previews/Vertical-Offset-1024-Pixels-Action.jpg" alt="Vertical Offset 1024 Pixels Example 1" /></p>
+<p><img src="Screenshots/Actions-Previews/Vertical-Offset-1024-Pixels-Action2.jpg" alt="Vertical Offset 1024 Pixels Example2" /></p>
+<h3>Horizontal and Vertical Offset 1024 Pixels</h3>
+<p>This action slides the image upwards and to the right by 1024 pixels and wraps the top and right side of the image around to the bottom side. This is useful for fixing image seams and preparing tiling textures. </p>
+<p>If you are running this action on a 2K square resolution image it will shift the seams on an image's border to the center of the document. After you have finished your cloning or touch-up work you can run the action a 2nd time so the image border will be reset to its original position. </p>
+<p>On a 4K square or 8K square resolution image you will need to run the action multiple time until the seam is shifted into the center of the document.</p>
+<p><img src="Screenshots/Actions-Previews/Horizontal-and-Vertical-Offset-1024-Pixels.jpg" alt="Horizontal and Vertical Offset 1024 Pixels Example" /></p>
+<h2>Conversions</h2>
+<h3>Inverse Angular Fisheye</h3>
+<p>This action will allow you to inverse an angular fisheye image. This is the effect &quot;rolling&quot; the inside of the fisheye image to the outside of the frame. This effect works best with a 360&deg; degree fisheye image.</p>
+<p>The action can be used to quickly turn a regular angular fisheye image into a &quot;tiny planet&quot; style image.</p>
+<p>The inverted fisheye effect is achieved by taking your angular fisheye image and doing a polar to rectangular conversion. Then the action rotates the image 180 degrees. The final step is to convert the image from rectangular coordinates back into polar coordinates.</p>
+<p>This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
+<p><em>Note:</em> It is also possible to use the &quot;Inverse Angular Fisheye&quot; action a 2nd time to convert a &quot;tiny planet&quot; image back into a normal fisheye image.</p>
+<p><img src="Screenshots/Actions-Previews/Inverse-Angular-Fisheye.jpg" alt="Inverse Angular Fisheye Example" /></p>
+<h3>Angular Fisheye to Equirectangular</h3>
+<p>This action converts a full frame fisheye image into a 360&deg; x 180&deg; spherical panorama with a ratio of 1:1. This means a fulldome image with a 2048x2048 resolution will be converted to a 2048x2048 resolution lat/long image. This is done with the help of the Photoshop polar to rectangular coordinates filter.</p>
+<p>This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.</p>
+<p>This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
+<p>Tip: If you see a visible seam artifact at the 0&deg; mark after converting to/from an angular fisheye format you can try flattening the image before performing the conversions. </p>
+<p><img src="Screenshots/Actions-Previews/Angular-Fisheye-to-Equirectangular-Action.jpg" alt="Angular Fisheye to Equirectangular Example 1" /></p>
+<h3>Angular Fisheye to 2:1 Equirectangular</h3>
+<p>This action converts a full frame fisheye image into a 360&deg; x 180&deg; spherical panorama with a ratio of 2:1. This means a fulldome image with a 2048x2048 resolution will be converted to a 4096x2048 resolution lat/long image. This is done with the help of the Photoshop polar to rectangular coordinates filter.</p>
+<p>This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.</p>
+<p>This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
+<p>Tip: If you see a visible seam artifact at the 0&deg; mark after converting to/from an angular fisheye format you can try flattening the image before performing the conversions. </p>
+<p><img src="Screenshots/Actions-Previews/Angular-Fisheye-to-2to1-Equirectangular-Action.jpg" alt="Angular Fisheye to 2:1 Equirectangular Example 1" /></p>
+<h3>180&deg; Domemaster to 2:1 Equirectangular</h3>
+<p>This action converts a 180&deg; Domemaster angular fisheye image into a 360&deg; x 180&deg; spherical panorama with a ratio of 2:1. </p>
+<p>Since a domemaster frame only has a vertical coverage area of 90 degrees when converted into a spherical format, this image will have the bottom / empty half of the spherical frame filled with a black background color.</p>
+<h3>Equirectangular to Angular Fisheye</h3>
+<p>This action converts a 360&deg; x 180&deg; spherical panorama into a full frame fisheye image. This means a lat/long image with a 1:1 aspect ratio like 2048x2048 pixels will be converted to a 2048x2048 angular fisheye image. This is done with the help of the Photoshop rectangular to polar coordinates filter.</p>
+<p>This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.</p>
+<p>This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
+<p>Tip: If you see a visible seam artifact at the 0&deg; mark after converting to/from an angular fisheye format you can try flattening the image before performing the conversions. </p>
+<p><img src="Screenshots/Actions-Previews/Equirectangular-to-Angular-Fisheye-Action.jpg" alt="Equirectangular Panorama to Angular Fisheye Example 1" /></p>
+<h3>2:1 Equirectangular to Angular Fisheye</h3>
+<p>This action converts a 360&deg; x 180&deg; spherical panorama into a full frame fisheye image. This means a lat/long image with a 2:1 aspect ratio like 4096x2048 pixels will be converted to a 2048x2048 angular fisheye image. This is done with the help of the Photoshop rectangular to polar coordinates filter.</p>
+<p>This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.</p>
+<p>This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
+<p>Tip: If you see a visible seam artifact at the 0&deg; mark after converting to/from an angular fisheye format you can try flattening the image before performing the conversions. </p>
+<p><img src="Screenshots/Actions-Previews/Equirectangular-to-Angular-Fisheye-Action.jpg" alt="2:1 Equirectangular Panorama to Angular Fisheye Example 1" /></p>
+<h3>2:1 Equirectangular to 180&deg; Domemaster</h3>
+<p>This action converts a 360&deg; x 180&deg; spherical panorama into a 180&deg; domemaster  formatted angular fisheye image. This means a lat/long image with a 2:1 aspect ratio like 4096x2048 pixels will be converted to a 2048x2048 domemaster formatted image with a black circular fisheye mask applied around the frame. </p>
+<p>This is done with the help of the Photoshop rectangular to polar coordinates filter.</p>
+<h3>3x2 Cube Map to Cube Map</h3>
+<p>This converts a 3x2 cube map format image into the cubic layer map panorama format.</p>
+<p>The converted cubic map faces are named:</p>
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/3x2-cubemap-action.jpg" alt="3x2 Cube Map to Cube Map Example 1" /></p>
+<h3>Vertical Cross to Cube Map</h3>
+<p>This converts a vertical cross format panorama into the cubic map panorama format.</p>
+<p>The converted cubic map faces are named:</p>
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/vertical-cross-cubemap-action.jpg" alt="Vertical Cross to Cube Map Example" /></p>
+<h3>Horizontal Cross to Cube Map</h3>
+<p>This converts a horizontal cross format panorama into the cubic map panorama format.</p>
+<p>The converted cubic map faces are named:</p>
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/horizontal-cross-cubemap-action.jpg" alt="Horizontal Cross to Cube Map Example" /></p>
+<h3>Vertical Tee to Cube Map</h3>
+<p>This converts a vertical tee format panorama into the cubic map panorama format.</p>
+<p>The converted cubic map faces are named:</p>
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/vertical-tee-cubemap-action.jpg" alt="Vertical Tee to Cube Map Example" /></p>
+<h3>Horizontal Tee to Cube Map</h3>
+<p>This converts a horizontal tee format panorama into the cubic map panorama format.</p>
+<p>The converted cubic map faces are named:</p>
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/horizontal-tee-cubemap-action.jpg" alt="Horizontal Tee to Cube Map Example" /></p>
+<h3>Vertical Strip to Cube Map</h3>
+<p>This converts a vertical strip format panorama into the cubic map panorama format.</p>
+<p>The input image is expected to be in a aspect 1:6 ratio. If the input image is 1024x6,144 pixel image the output will be a 1024x1024 pixel layered photoshop image.</p>
+<p>The converted cubic map faces are named:</p>
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/vertical-strip-cubemap-action.jpg" alt="Vertical Strip to Cube Map Example" /></p>
+<h3>Horizontal Strip to Cube Map</h3>
+<p>This converts a horizontal strip format panorama into the cubic map panorama format.</p>
+<p>The input image is expected to be in a aspect 6:1 ratio. If the input image is 6,144x1024 pixel image the output will be a 1024x1024 pixel layered photoshop image.</p>
+<p>The converted cubic map faces are named:</p>
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/horizontal-strip-cubemap-action.jpg" alt="Horizontal Strip to Cube Map Example" /></p>
+<h3>Mental Ray Horizontal Strip to Cube Map</h3>
+<p>This converts a mental ray <code>mib_lookup_cube1</code> horizontal strip format panorama into the cubic map panorama format.</p>
+<p>The input image is expected to be in a aspect 6:1 ratio in the mental ray cubic frame layout. If the input image is 6,144x1024 pixel image the output will be a 1024x1024 pixel layered photoshop image.</p>
+<p>The input image is in the mental ray <code>mib_lookup_cube1</code> horizontal strip image format:</p>
+<table>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+  <tr>
+    <td>top (flipped vertically)</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>front</td>
+  </tr>
+</table>
+<p>The output from this action is a layered Photoshop document with cubic faces named:</p>
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/mr-horizontal-strip-to-cubemap-action.jpg" alt="Mental Ray Horizontal Strip to Cube Map Example" /></p>
+<h3>Cube Map to 3x2 Cube Map</h3>
+<p>This converts a cube map format image into the 3x2 panorama format.</p>
+<p><img src="Screenshots/Actions-Previews/cubemap-3x2-cube-action.jpg" alt="Cube Map to 3x2 Cube Map Example" /></p>
+<h3>Cube Map to Vertical Cross</h3>
+<p>This converts a cube map format image into the vertical cross panorama format.</p>
+<p>The converted vertical cross faces are located in the format:</p>
+<table>
+  <tr>
+    <td>blank</td> <td>top</td> <td>blank</td>
+  </tr>
+  <tr>
+    <td>left</td> <td>front</td> <td>right</td>
+  </tr>
+  <tr>
+    <td>blank</td> <td>bottom</td> <td>blank</td>
+  </tr>
+  <tr>
+    <td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/cubemap-vertical-cross-action.jpg" alt="Cube Map to Vertical Cross Example" /></p>
+<h3>Cube Map to Horizontal Cross</h3>
+<p>This converts a cube map format image into the horizontal cross panorama format.</p>
+<p>The converted horizontal cross faces are located in the format:</p>
+<table>
+  <tr>
+    <td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
+  </tr>
+  <tr>
+    <td>left</td> <td>front</td> <td>right</td> <td>back</td>
+  </tr>
+  <tr>
+    <td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/cubemap-horizontal-cross-action.jpg" alt="Cube Map to Horizontal Cross Example" /></p>
+<h3>Cube Map to Vertical Tee</h3>
+<p>This converts a cube map format image into the vertical tee panorama format.</p>
+<p>The converted vertical tee faces are located in the format:</p>
+<table>
+  <tr>
+    <td>left</td> <td>front</td> <td>right</td>
+  </tr>
+  <tr>
+     <td>blank</td> <td>bottom</td><td>blank</td>
+  </tr>
+  <tr>
+     <td>blank</td> <td>back (rotated 180&deg;)</td> <td>blank</td> 
+  </tr>
+  <tr>
+     <td>blank</td> <td>top</td> <td>blank</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/cubemap-vertical-tee-action.jpg" alt="Cube Map to Vertical Tee Example" /></p>
+<h3>Cube Map to Horizontal Tee</h3>
+<p>This converts a cube map format image into the horizontal tee panorama format.</p>
+<p>The converted horizontal tee faces are located in the format:</p>
+<table>
+  <tr>
+    <td>blank</td> <td>top</td> <td>blank</td> <td>blank</td>
+  </tr>
+  <tr>
+    <td>front</td> <td>right</td> <td>back</td> <td>left</td>
+  </tr>
+  <tr>
+    <td>blank</td> <td>bottom</td> <td>blank</td> <td>blank</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/cubemap-horizontal-tee-action.jpg" alt="Cube Map to Horizontal Tee Example" /></p>
+<h3>Cube Map to Vertical Strip</h3>
+<p>This converts a cube map format image into a single column panorama format.</p>
+<p>The vertical strip faces are located in the format:</p>
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/cubemap-vertical-strip-action.jpg" alt="Cube Map to Vertical Strip Example" /></p>
+<h3>Cube Map to Horizontal Strip</h3>
+<p>This converts a cube map format image into a single row panorama format.</p>
+<p>The horizontal strip faces are located in the format:</p>
+<table>
+  <tr>
+    <td>front</td> <td>right</td> <td>back</td> <td>left</td> <td>top</td> <td>bottom</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/cubemap-horizontal-strip-action.jpg" alt="Cube Map to Horizontal Strip Example" /></p>
+<h3>Cube Map to Mental Ray Horizontal Strip</h3>
+<p>This converts a cube map format image into a single row panorama format.</p>
+<p>This converts a layered cubic map Photoshop document into a mental ray <code>mib_lookup_cube1</code> horizontal strip format panorama.</p>
+<p>The input image is expected to be in a 1:1 aspect ratio. If the input image is a layered 1024x1024 pixel image the output will be a 6,144x1024 pixel image with a 6:1 aspect ratio.</p>
+<p>The input for this action is a layered Photoshop document with cubic faces named:</p>
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+<p>The output image is in the mental ray <code>mib_lookup_cube1</code> horizontal strip image layout with the following cubic map face order:</p>
+<table>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+  <tr>
+    <td>top (flipped vertically)</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>front</td>
+  </tr>
+</table>
+<p><img src="Screenshots/Actions-Previews/cubemap-to-mr-horizontal-strip-action.jpg" alt="Cube Map to Mental Ray Horizontal Strip Example" /></p>
+<h3>Cube Map to New Cube Map</h3>
+<p>This action will copy the cube map &quot;front&quot;, &quot;right&quot;, &quot;back&quot;, &quot;left&quot;, &quot;top&quot;, and &quot;bottom&quot; layers from your current Photoshop document into a new Photoshop document.</p>
+<h3>Cube Map Rotate X:+90 Degrees</h3>
+<p>This action will rotate the cube map panorama by 90 degrees on the X-axis. This has the effect of turning the front &quot;view&quot; upwards towards the sky.</p>
+<p>Tip: If you want to rotate a cross style, tee style, 3x2 cubic map, or strip style pano you need to convert them to the layered &quot;cube map&quot; format first using the actions in the Conversions Actions tab group.</p>
+<p><img src="Screenshots/Actions-Previews/cubemap-rotate-x90-action.jpg" alt="Cube Map Rotate X:+90 Degrees Example 1" /></p>
+<p><img src="Screenshots/Actions-Previews/cubemap-rotate-x90-layers.jpg" alt="Cube Map Rotate X:+90 Degrees Example 2" /></p>
+<h3>Cube Map Rotate Y:+90 Degrees</h3>
+<p>This action will rotate the cube map panorama by 90 degrees on the Y-axis. The has the effect of turning the front &quot;view&quot; towards the left.</p>
+<p>Tip: If you want to rotate a cross style, tee style, 3x2 cubic map, or strip style pano you need to convert them to the layered &quot;cube map&quot; format first using the actions in the Conversions Actions tab group.</p>
+<p><img src="Screenshots/Actions-Previews/cubemap-rotate-y90-action.jpg" alt="Cube Map Rotate Y:+90 Degrees Example 1" /></p>
+<p><img src="Screenshots/Actions-Previews/cubemap-rotate-y90-layers.jpg" alt="Cube Map Rotate Y:+90 Degrees Example 2" /></p>
+<h3>Cube Map Rotate Z:+90 Degrees</h3>
+<p>This action will rotate the cube map panorama by 90 degrees on the Z-axis. This has the effect of rotating the front &quot;view&quot; 90 degrees clockwise to the right. </p>
+<p>Tip: If you want to rotate a cross style, tee style, 3x2 cubic map, or strip style pano you need to convert them to the layered &quot;cube map&quot; format first using the actions in the Conversions Actions tab group.</p>
+<p><img src="Screenshots/Actions-Previews/cubemap-rotate-z90-action.jpg" alt="Cube Map Rotate Z:+90 Degrees Example 1" /></p>
+<p><img src="Screenshots/Actions-Previews/cubemap-rotate-z90-layers.jpg" alt="Cube Map Rotate Z:+90 Degrees Example 1" /></p>
+<h2>Masking and Selection</h2>
+<h3>Crop to Selection</h3>
+<p>This action will crop the Photoshop document smaller based upon the currently selected area. The crop command will reduce the image size based upon a square cropping rectangle drawn around the current selection shape.</p>
+<h3>Select All</h3>
+<p>This action will select all of the pixels on the current image layer.</p>
+<p><img src="Screenshots/Actions-Previews/Select-All-Action.jpg" alt="Select All Example" /></p>
+<h3>Save Selection</h3>
+<p>This action will save the current selection to a new alpha channel.</p>
+<h3>Load Selection</h3>
+<p>This action will open the &quot;Load Selection&quot; dialogue. You can choose to load either a layer mask, transparency channel, or an alpha channel into the current selection region.</p>
+<p>There are several advanced options in the the &quot;Load Selection&quot; dialogue that will let you do differencing operations ( new, add, subtract, intersect, or invert) your current selection.</p>
+<p>For example of you were painting a layer mask you could change your current selection region by subtracting the shape of a mask or alpha channel from another layer or image.</p>
+<h3>Color Range Selection</h3>
+<p>This action will load the &quot;Color Range&quot; dialogue. This dialogue is useful for using a color / luma keying approach to generate a new selection region.</p>
+<p>You can preview the effects of the selection region in the dialogue or use the &quot;Selection Preview&quot; pop-up menu to view the results in the main Photoshop  window.</p>
+<h3>Inside Circular 50% Mask</h3>
+<p>This action creates a circular layer mask that hides the area inside a circular region in the center of the current layer.</p>
+<p><img src="Screenshots/Actions-Previews/Inside-Circular-50-Percent-Mask-Action.jpg" alt="Inside Circular 50% Mask Example" /></p>
+<h3>Outside Circular 50% Mask</h3>
+<p>This action creates a circular layer mask that hides the area outside a circular region in the center of the current layer.</p>
+<p><img src="Screenshots/Actions-Previews/Outside-Circular-50-Percent-Mask-Action.jpg" alt="Outside Circular 50% Mask Example" /></p>
+<h3>Fisheye Alpha Channel</h3>
+<p>This action creates a full frame circular alpha channel.</p>
+<p>A common use is to create a single circular alpha channel and then use the &quot;load selection&quot; action to repetitively make circular domemaster shaped boundary selections.</p>
+<p><img src="Screenshots/Actions-Previews/Fisheye-Alpha-Channel-Action.jpg" alt="Fisheye Alpha Channel Example" /></p>
+<h3>Fisheye Layer Mask</h3>
+<p>This action creates a full frame circular layer mask on the currently select layer.</p>
+<p>To use this action you must convert all flattened background layers into floating layers. You can do this using the &quot;Background to Layer&quot; action.</p>
+<p><img src="Screenshots/Actions-Previews/Fisheye-Layer-Mask-Action.jpg" alt="Fisheye Layer Mask Example" /></p>
+<h3>Layer Mask From Selection</h3>
+<p>This action applies a new raster layer mask based upon the current selection. To use this action you must remove any existing &quot;raster&quot; layer masks from the current layer.</p>
+<p>Layer masks are a quick and easy way to temporarily hide content on an image layer. </p>
+<p><img src="Screenshots/Actions-Previews/Layer-Mask-From-Selection-Action.jpg" alt="Layer Mask From Selection Example 1" /></p>
+<p><img src="Screenshots/Actions-Previews/Layer-Mask-From-Selection-Action2.jpg" alt="Layer Mask From Selection Example 2" /></p>
+<p>After you create a new layer mask you can edit the layer mask by opening the layers tab and clicking on the mask icon to the right of the layer icon. When the layer mask is selected you can paint the mask using the brush tool.</p>
+<h4>Layer Mask Editing Tips</h4>
+<p>When editing a layer mask you can paint regions of the layer visible or invisible by changing the brush color to either white or black.</p>
+<p>You can create transparent areas on the layer by using a shade of gray as the brush color when painting the layer mask.</p>
+<p>If you adjust the brush hardness to 100% you can paint a crisp hard-edged matte. For a nice soft matte edge set the brush hardness to a value between 0 to 80%.</p>
+<p>You can view the contents of a single layer mask full-screen by holding down the option key on Mac OS X or the alt key on Windows, and clicking on a layer mask thumbnail image in the Layers Tab. </p>
+<p>To exit the full-screen layer mask view you need to click back on the layer's color thumbnail image in the Layers Tab.</p>
+<p>You can invert a layer mask by selecting the layer mask thumbnail icon and clicking the &quot;Invert Colors&quot; action button. This will reverse the visible and hidden areas in the layer mask.</p>
+<h3>Layer Mask From Inverse Selection</h3>
+<p>This action creates a new layer mask based upon inverting the current selection. To use this action you must remove any existing &quot;raster&quot; layer masks from the current layer.</p>
+<p><img src="Screenshots/Actions-Previews/Layer-Mask-From-Inverse-Selection-Action.jpg" alt="Layer Mask From Inverse Selection Example 1" /></p>
+<p><img src="Screenshots/Actions-Previews/Layer-Mask-From-Inverse-Selection-Action2.jpg" alt="Layer Mask From Inverse Selection Example 2" /></p>
+<h3>Enable Layer Mask</h3>
+<p>This action will enable the layer mask on the current layer. This is useful for comparing the effects of transparency on the current layer.</p>
+<p><img src="Screenshots/Actions-Previews/Enable-Layer-Mask-Action.jpg" alt="Enable Layer Mask Example" /></p>
+<h3>Disable Layer Mask</h3>
+<p>This action temporarily disables the layer mask on the current layer. This is useful for comparing the effects of transparency on the current layer.</p>
+<p><img src="Screenshots/Actions-Previews/Disable-Layer-Mask-Action.jpg" alt="Disable Layer Mask Example" /></p>
+<h3>Delete Layer Mask</h3>
+<p>This action deletes the layer mask on the current layer.</p>
+<p><img src="Screenshots/Actions-Previews/Delete-Layer-Mask-Action.jpg" alt="Delete Layer Mask Example" /></p>
+<h3>Black Matting BG</h3>
+<p>This action creates a new shape layer with a black background color. </p>
+<p>If the current image layer is a floating layer, the black BG shape layer will be placed behind it. If the current image layer is a flattened background layer, the Black BG shape layer will be placed on top of it.</p>
+<h2>General Utilities</h2>
+<h3>1x6 Guide Grid</h3>
+<p>This creates a vertical strip style 1x6 alignment guide layout. This grid is extremely useful for making accurate selections in the image when the &quot;Snap to Guides&quot; command is turned on.</p>
+<h3>3x2 Guide Grid</h3>
+<p>This creates a 3x2 cube map style alignment guide layout. This grid is extremely useful for making accurate selections in the image when the &quot;Snap to Guides&quot; command is turned on.</p>
+<h3>3x4 Guide Grid</h3>
+<p>This creates a vertical cross or vertical tee style 3x4 alignment guide layout. This grid is extremely useful for making accurate selections in the image when the &quot;Snap to Guides&quot; command is turned on.</p>
+<h3>4x3 Guide Grid</h3>
+<p>This creates a horizontal cross or horizontal tee style 4x3 alignment guide layout. This grid is extremely useful for making accurate selections in the image when the &quot;Snap to Guides&quot; command is turned on.</p>
+<h3>4x4 Grid Guide</h3>
+<p>This action creates a 4x4 style alignment guide layout. This grid is extremely useful for making accurate selections in the image when the &quot;Snap to Guides&quot; command is turned on. You can use the grid to make sure the nadir point in the fulldome image is perfect centered.</p>
+<p><img src="Screenshots/Actions-Previews/4-x-4-Grid-Guide-Action.jpg" alt="4 x 4 Grid Guide Example" /></p>
+<p><img src="Screenshots/Actions-Previews/4-x-4-Grid-Guide-Action2.jpg" alt="4 x 4 Grid Guide Example" /></p>
+<h3>6x1 Guide Grid</h3>
+<p>This creates a horizontal strip style 6x1 alignment guide layout. This grid is extremely useful for making accurate selections in the image when the &quot;Snap to Guides&quot; command is turned on.</p>
+<h3>Clear Guides</h3>
+<p>This action will remove all of the guides from the current Photoshop document.</p>
+<p><img src="Screenshots/Actions-Previews/Clear-Guides-Action.jpg" alt="Clear Guides Example" /></p>
+<h3>Invert Colors</h3>
+<p>This action will invert the image colors of the currently selected layer. This action can be used on color images, layer masks, and alpha channels.</p>
+<p><img src="Screenshots/Actions-Previews/Invert-Colors-Action.jpg" alt="Invert Colors Example" /></p>
+<p>My favorite use of this filter is to invert a grayscale layer mask. This will reverse the visible and hidden parts of the layer mask. </p>
+<p>This action can be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action. The action can also used on a layer mask by selecting the layer mask's thumbnail icon in the layers tab and then clicking the button for the action.</p>
+<h3>Background to Layer</h3>
+<p>This action will convert a flattened image from the background layer mode into a floating layer that supports features like layer masks.</p>
+<p>The most common use for this action is to prepare an imported picture like a flat JPEG .jpg or Targa .tga file for custom layer masks.</p>
+<p><img src="Screenshots/Actions-Previews/Background-to-Layer-Action.jpg" alt="Background to Layer Example" /></p>
+<h3>Merge Visible</h3>
+<p>This action will merge all of the visible layers into a single layer. </p>
+<p>This action is different than the flatten image command in that it will ignore any hidden layers. You can use the merge visible command to selectively flatten layers by hiding the other layers, elements, and groups you want to keep.</p>
+<p>This version of Merge Visible can merge a single layer and bake the layer mask and layer style effects into the final image.</p>
+<h3>Flatten Image</h3>
+<p>This action will merge all of the layers in the current Photoshop document. This is useful for removing transparency from an image, merging layer style effects, vector shapes, and editable text layers into a single raster image.</p>
+<p>When an image is flattened, all of the transparent background areas in the image will be filled with a solid color.</p>
+<p><em>Note:</em> You really want to have saved a backup of your Photoshop document before you flatten the image because all of your layers are permanently merged into a single element!</p>
+<hr />
+<p>Actions created by Andrew Hazelden. (c) copyright 2014.</p>
+<p>Email: <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#x61;n&#x64;&#x72;&#x65;&#x77;&#x40;&#97;&#x6e;d&#114;&#x65;&#x77;&#104;&#x61;&#122;&#101;&#x6c;&#x64;&#x65;&#110;&#x2e;&#99;&#x6f;&#109;">&#x61;&#110;&#x64;&#114;&#101;w&#64;a&#110;&#100;&#114;&#101;&#119;&#x68;&#x61;zel&#100;&#x65;&#x6e;&#46;&#99;&#111;&#109;</a></p>
+<p>Blog: <a href="http://www.andrewhazelden.com">http://www.andrewhazelden.com</a></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

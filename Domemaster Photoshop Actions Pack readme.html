@@ -23,7 +23,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body {
   font-family: Helvetica, arial, freesans, clean, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
   color: #333;
   background-color: #fff;
@@ -395,8 +395,8 @@ Flatten Image
 <h2>Step 3. Switch to Button Mode</h2>
 <p>If you want to make it easier to run the actions you can switch the Actions tab to &quot;Button Mode&quot;. This will make each action item a clickable button.</p>
 <p>Click on the Actions tab pop-up menu located at the top right of the actions tab.</p>
-<p>Select the first item in the menu labeled &quot;Button Mode&quot;. Your view will switch from a long list into a colorfull grid of labeled buttons.
-<img src="Screenshots/5.switch-to-button-mode.png" alt="Switch the Actions tab to the to button display  mode" /></p>
+<p>Select the first item in the menu labeled &quot;Button Mode&quot;. Your view will switch from a long list into a colorfull grid of labeled buttons.  </p>
+<p><img src="Screenshots/5.switch-to-button-mode.png" alt="Switch the Actions tab to the to button display  mode" /></p>
 <p>To make it easier to find things, the actions groups are color coded:</p>
 <p>The &quot;Conversions&quot; actions are blue. </p>
 <p>The &quot;General Utilties&quot; actions are violet. </p>
@@ -445,39 +445,41 @@ Flatten Image
 <p>This action will allow you to inverse an angular fisheye image. This is the effect &quot;rolling&quot; the inside of the fisheye image to the outside of the frame. This effect works best with a 360&deg; degree fisheye image.</p>
 <p>The action can be used to quickly turn a regular angular fisheye image into a &quot;tiny planet&quot; style image.</p>
 <p>The inverted fisheye effect is achieved by taking your angular fisheye image and doing a polar to rectangular conversion. Then the action rotates the image 180 degrees. The final step is to convert the image from rectangular coordinates back into polar coordinates.</p>
-<p>This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
+<p>The latest version of Photoshop CC (14.2.1+) has added support for 16-bit per channel and 32-bit per channel imagery in the Polar Coordinates filter. If you are using an older version of Photoshop, the action will not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
 <p><em>Note:</em> It is also possible to use the &quot;Inverse Angular Fisheye&quot; action a 2nd time to convert a &quot;tiny planet&quot; image back into a normal fisheye image.</p>
 <p><img src="Screenshots/Actions-Previews/Inverse-Angular-Fisheye.jpg" alt="Inverse Angular Fisheye Example" /></p>
 <h3>Angular Fisheye to Equirectangular</h3>
 <p>This action converts a full frame fisheye image into a 360&deg; x 180&deg; spherical panorama with a ratio of 1:1. This means a fulldome image with a 2048x2048 resolution will be converted to a 2048x2048 resolution lat/long image. This is done with the help of the Photoshop polar to rectangular coordinates filter.</p>
 <p>This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.</p>
-<p>This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
+<p>The latest version of Photoshop CC (14.2.1+) has added support for 16-bit per channel and 32-bit per channel imagery in the Polar Coordinates filter. If you are using an older version of Photoshop, the action will not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
 <p>Tip: If you see a visible seam artifact at the 0&deg; mark after converting to/from an angular fisheye format you can try flattening the image before performing the conversions. </p>
 <p><img src="Screenshots/Actions-Previews/Angular-Fisheye-to-Equirectangular-Action.jpg" alt="Angular Fisheye to Equirectangular Example 1" /></p>
 <h3>Angular Fisheye to 2:1 Equirectangular</h3>
 <p>This action converts a full frame fisheye image into a 360&deg; x 180&deg; spherical panorama with a ratio of 2:1. This means a fulldome image with a 2048x2048 resolution will be converted to a 4096x2048 resolution lat/long image. This is done with the help of the Photoshop polar to rectangular coordinates filter.</p>
 <p>This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.</p>
-<p>This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
+<p>The latest version of Photoshop CC (14.2.1+) has added support for 16-bit per channel and 32-bit per channel imagery in the Polar Coordinates filter. If you are using an older version of Photoshop, the action will not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
 <p>Tip: If you see a visible seam artifact at the 0&deg; mark after converting to/from an angular fisheye format you can try flattening the image before performing the conversions. </p>
 <p><img src="Screenshots/Actions-Previews/Angular-Fisheye-to-2to1-Equirectangular-Action.jpg" alt="Angular Fisheye to 2:1 Equirectangular Example 1" /></p>
 <h3>180&deg; Domemaster to 2:1 Equirectangular</h3>
 <p>This action converts a 180&deg; Domemaster angular fisheye image into a 360&deg; x 180&deg; spherical panorama with a ratio of 2:1. </p>
 <p>Since a domemaster frame only has a vertical coverage area of 90 degrees when converted into a spherical format, this image will have the bottom / empty half of the spherical frame filled with a black background color.</p>
+<p><img src="Screenshots/Actions-Previews/180-Domemaster-to-2to1-Equirectangular-Action.jpg" alt="180&deg; Domemaster to 2:1 Equirectangular Example 1" /></p>
 <h3>Equirectangular to Angular Fisheye</h3>
 <p>This action converts a 360&deg; x 180&deg; spherical panorama into a full frame fisheye image. This means a lat/long image with a 1:1 aspect ratio like 2048x2048 pixels will be converted to a 2048x2048 angular fisheye image. This is done with the help of the Photoshop rectangular to polar coordinates filter.</p>
 <p>This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.</p>
-<p>This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
+<p>The latest version of Photoshop CC (14.2.1+) has added support for 16-bit per channel and 32-bit per channel imagery in the Polar Coordinates filter. If you are using an older version of Photoshop, the action will not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
 <p>Tip: If you see a visible seam artifact at the 0&deg; mark after converting to/from an angular fisheye format you can try flattening the image before performing the conversions. </p>
 <p><img src="Screenshots/Actions-Previews/Equirectangular-to-Angular-Fisheye-Action.jpg" alt="Equirectangular Panorama to Angular Fisheye Example 1" /></p>
 <h3>2:1 Equirectangular to Angular Fisheye</h3>
 <p>This action converts a 360&deg; x 180&deg; spherical panorama into a full frame fisheye image. This means a lat/long image with a 2:1 aspect ratio like 4096x2048 pixels will be converted to a 2048x2048 angular fisheye image. This is done with the help of the Photoshop rectangular to polar coordinates filter.</p>
 <p>This action can also be used on individual alpha channels by selecting the alpha channel in the Channels tab and then clicking the button for the action.</p>
-<p>This action does not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
+<p>The latest version of Photoshop CC (14.2.1+) has added support for 16-bit per channel and 32-bit per channel imagery in the Polar Coordinates filter. If you are using an older version of Photoshop, the action will not work on 16-bit per channel and 32-bit per channel images due to limitations in Photoshop's &quot;Polar to Rectangular&quot; image filter.</p>
 <p>Tip: If you see a visible seam artifact at the 0&deg; mark after converting to/from an angular fisheye format you can try flattening the image before performing the conversions. </p>
 <p><img src="Screenshots/Actions-Previews/Equirectangular-to-Angular-Fisheye-Action.jpg" alt="2:1 Equirectangular Panorama to Angular Fisheye Example 1" /></p>
 <h3>2:1 Equirectangular to 180&deg; Domemaster</h3>
-<p>This action converts a 360&deg; x 180&deg; spherical panorama into a 180&deg; domemaster  formatted angular fisheye image. This means a lat/long image with a 2:1 aspect ratio like 4096x2048 pixels will be converted to a 2048x2048 domemaster formatted image with a black circular fisheye mask applied around the frame. </p>
+<p>This action converts a 360&deg; x 180&deg; spherical panorama into a 180&deg; domemaster  formatted angular fisheye image. This means a lat/long image with a 2:1 aspect ratio will be converted to a domemaster formatted image with a black circular fisheye mask applied around the frame. </p>
 <p>This is done with the help of the Photoshop rectangular to polar coordinates filter.</p>
+<p><img src="Screenshots/Actions-Previews/2to1-Equirectangular-to-180-Domemaster-Action.jpg" alt="2:1 Equirectangular to 180&deg; Domemaster Example 1" /></p>
 <h3>3x2 Cube Map to Cube Map</h3>
 <p>This converts a 3x2 cube map format image into the cubic layer map panorama format.</p>
 <p>The converted cubic map faces are named:</p>

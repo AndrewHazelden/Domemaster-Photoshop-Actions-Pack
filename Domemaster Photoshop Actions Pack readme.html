@@ -23,7 +23,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body {
   font-family: Helvetica, arial, freesans, clean, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.6;
   color: #333;
   background-color: #fff;
@@ -292,7 +292,7 @@ img {
 </head>
 <body>
 <h1>Domemaster Photoshop Actions Pack</h1>
-<p><strong>Version 1</strong> - Released October 19, 2014</p>
+<p><strong>Version 2</strong> - Released November 20, 2015</p>
 <p>by Andrew Hazelden</p>
 <h2>About the Software</h2>
 <p>The Domemaster Photoshop Actions Pack is a collection of custom Adobe Photoshop actions that were designed to speed up the fulldome content creation workflow. </p>
@@ -305,6 +305,8 @@ img {
 2:1 to 1:1 Aspect Ratio Reduce<br />
 50% Scale<br />
 200% Scale<br />
+200% Vertical Canvas Expand
+200% Horizontal Canvas Expand
 Rotate 90 Degrees<br />
 Rotate 180 Degrees<br />
 Rotate 270 Degrees<br />
@@ -364,13 +366,18 @@ Black Matting BG</p>
 </blockquote>
 <h2>General Utilities:</h2>
 <blockquote>
-<p>1x6 Guide Grid<br />
+<p>1x1 Guide Grid
+1x2 Guide Grid
+1x6 Guide Grid 
+2x1 Guide Grid 
 2x2 Guide Grid<br />
 3x2 Guide Grid<br />
 3x4 Guide Grid<br />
 4x3 Guide Grid<br />
 4x4 Guide Grid<br />
 6x1 Guide Grid<br />
+6x2 Guide Grid
+12x1 Guide Grid
 Clear Guides<br />
 Invert Colors<br />
 Background to Layer<br />
@@ -379,7 +386,7 @@ Flatten Image
 </p>
 </blockquote>
 <h1>Installation Instructions</h1>
-<p>The Domemaster Photoshop Actions Pack is comptaible with Photoshop CS3 to CS6 on both Mac and Windows.</p>
+<p>The Domemaster Photoshop Actions Pack is compatible with Photoshop CS3 to CC on both Mac and Windows.</p>
 <h2>Step 1. Open the Actions Tab</h2>
 <p>Start by opening Adobe Photoshop. Navigate to the &quot;Window&quot; menu, and select the &quot;Actions&quot; menu item.</p>
 <p><img src="Screenshots/1.install-window-actions-menu-item.png" alt="Open the Actions Tab" /></p>
@@ -412,6 +419,10 @@ Flatten Image
 <p>This action will scale the image 50% smaller using bicubic interpolation.</p>
 <h3>200% Scale</h3>
 <p>This action will scale the image 200% larger using bicubic interpolation.</p>
+<h3>200% Vertical Canvas Expand</h3>
+<p>This action will double the height of the image which is helpful for preparing over under format stereo images. A guide line is added at the edge of the expanded area which makes snapping easier.</p>
+<h3>200% Horizontal Canvas Expand</h3>
+<p>This action will double the width of the image which is helpful for preparing side by side format stereo images. A guide line is added at the edge of the expanded area which makes snapping easier.</p>
 <h3>Rotate 90 Degrees</h3>
 <p>This action will rotate the Photoshop document by 90 degrees. This is useful for changing the orientation of the angular fisheye and equirectangular images prior to the conversion.</p>
 <p><img src="Screenshots/Actions-Previews/Rotate-90-Degrees-Action.jpg" alt="Rotate 90 Degrees Example 1" /></p>
@@ -921,8 +932,14 @@ Flatten Image
 <p>This action creates a new shape layer with a black background color. </p>
 <p>If the current image layer is a floating layer, the black BG shape layer will be placed behind it. If the current image layer is a flattened background layer, the Black BG shape layer will be placed on top of it.</p>
 <h2>General Utilities</h2>
+<h3>1x1 Guide Grid</h3>
+<p>This creates a guide layout that forms a basic outline of the image frame.</p>
+<h3>1x2 Guide Grid</h3>
+<p>This creates an over under stereo format guide grid.</p>
 <h3>1x6 Guide Grid</h3>
 <p>This creates a vertical strip style 1x6 alignment guide layout. This grid is extremely useful for making accurate selections in the image when the &quot;Snap to Guides&quot; command is turned on.</p>
+<h3>2x1 Guide Grid</h3>
+<p>This creates a side by side stereo format guide grid.</p>
 <h3>3x2 Guide Grid</h3>
 <p>This creates a 3x2 cube map style alignment guide layout. This grid is extremely useful for making accurate selections in the image when the &quot;Snap to Guides&quot; command is turned on.</p>
 <h3>3x4 Guide Grid</h3>
@@ -935,6 +952,10 @@ Flatten Image
 <p><img src="Screenshots/Actions-Previews/4-x-4-Grid-Guide-Action2.jpg" alt="4 x 4 Grid Guide Example" /></p>
 <h3>6x1 Guide Grid</h3>
 <p>This creates a horizontal strip style 6x1 alignment guide layout. This grid is extremely useful for making accurate selections in the image when the &quot;Snap to Guides&quot; command is turned on.</p>
+<h3>6x2 Guide Grid</h3>
+<p>This creates a 2 image high, over under stereo format, horizontal strip style 6x1 alignment guide layout.</p>
+<h3>12x1 Guide Grid</h3>
+<p>This creates a side by side stereo format horizontal strip style 6x1 alignment guide layout.</p>
 <h3>Clear Guides</h3>
 <p>This action will remove all of the guides from the current Photoshop document.</p>
 <p><img src="Screenshots/Actions-Previews/Clear-Guides-Action.jpg" alt="Clear Guides Example" /></p>
@@ -956,7 +977,7 @@ Flatten Image
 <p>When an image is flattened, all of the transparent background areas in the image will be filled with a solid color.</p>
 <p><em>Note:</em> You really want to have saved a backup of your Photoshop document before you flatten the image because all of your layers are permanently merged into a single element!</p>
 <hr />
-<p>Actions created by Andrew Hazelden. (c) copyright 2014.</p>
+<p>Actions created by Andrew Hazelden. (c) copyright 2015.</p>
 <p>Email: <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#x61;n&#x64;&#x72;&#x65;&#x77;&#x40;&#97;&#x6e;d&#114;&#x65;&#x77;&#104;&#x61;&#122;&#101;&#x6c;&#x64;&#x65;&#110;&#x2e;&#99;&#x6f;&#109;">&#x61;&#110;&#x64;&#114;&#101;w&#64;a&#110;&#100;&#114;&#101;&#119;&#x68;&#x61;zel&#100;&#x65;&#x6e;&#46;&#99;&#111;&#109;</a></p>
 <p>Blog: <a href="http://www.andrewhazelden.com">http://www.andrewhazelden.com</a></p>
 

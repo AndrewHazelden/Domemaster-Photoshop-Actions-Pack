@@ -889,16 +889,19 @@ If the current image layer is a floating layer, the black BG shape layer will be
 ## General Utilities ##
 
 ### 1x1 Guide Grid ###
-This creates a guide layout that forms a basic outline of the image frame.
+This creates a guide layout that forms a basic outline of the image frame. This grid is extremely useful for making accurate selections in the image when the "Snap to Guides" command is turned on.
 
 ### 1x2 Guide Grid ###
-This creates an over under stereo format guide grid.
+This creates an over under stereo format guide grid. This grid is extremely useful for making accurate selections in the image when the "Snap to Guides" command is turned on.
 
 ### 1x6 Guide Grid ###
 This creates a vertical strip style 1x6 alignment guide layout. This grid is extremely useful for making accurate selections in the image when the "Snap to Guides" command is turned on.
 
 ### 2x1 Guide Grid ###
-This creates a side by side stereo format guide grid.
+This creates a side by side stereo format guide grid. This grid is extremely useful for making accurate selections in the image when the "Snap to Guides" command is turned on.
+
+### 2x2 Guide Grid ###
+This creates a 2x2 guide grid that divides the image into quarters. This grid is extremely useful for making accurate selections in the image when the "Snap to Guides" command is turned on.
 
 ### 3x2 Guide Grid  ###
 This creates a 3x2 cube map style alignment guide layout. This grid is extremely useful for making accurate selections in the image when the "Snap to Guides" command is turned on.
@@ -920,10 +923,10 @@ This action creates a 4x4 style alignment guide layout. This grid is extremely u
 This creates a horizontal strip style 6x1 alignment guide layout. This grid is extremely useful for making accurate selections in the image when the "Snap to Guides" command is turned on.
 
 ### 6x2 Guide Grid ###
-This creates a 2 image high, over under stereo format, horizontal strip style 6x1 alignment guide layout.
+This creates a 2 image high, over under stereo format, horizontal strip style 6x1 alignment guide layout. This grid is extremely useful for making accurate selections in the image when the "Snap to Guides" command is turned on.
 
 ### 12x1 Guide Grid ###
-This creates a side by side stereo format horizontal strip style 6x1 alignment guide layout.
+This creates a side by side stereo format horizontal strip style 6x1 alignment guide layout. This grid is extremely useful for making accurate selections in the image when the "Snap to Guides" command is turned on.
 
 ### Clear Guides ###
 This action will remove all of the guides from the current Photoshop document.

@@ -1,8 +1,6 @@
 # Domemaster Photoshop Actions Pack #
-**Version 2** - Released November 20, 2015
-
+**Version 2.1** - Released November 21, 2015
 by Andrew Hazelden
-
 
 About the Software
 -----------------
@@ -13,6 +11,16 @@ The actions provide tools for converting images from several common panoramic fo
 ![Domemaster Photoshop Actions Pack](Screenshots/photoshop-actions-list.png)
 
 
+# Version History #
+
+## Version 2.1 - 2015-11-21 ##
+- Improved the Photoshop CS6 compatibility of the "2:1 Equirectangular to 180&deg; Domemaster" action.
+
+## Version 2 - 2015-11-20 ##
+- Expanded the **General Utilities** section to include "1x1 Guide Grid", "1x2 Guide Grid", "2x1 Guide Grid", "6x2 Guide Grid", and "12x1 Guide Grid".
+- Expanded the **Transforms** section to include "200% Vertical Canvas Expand", and "200% Horizontal Canvas Expand".
+
+
 # Action List #
 
 ## Transforms: ##
@@ -20,8 +28,8 @@ The actions provide tools for converting images from several common panoramic fo
   > 2:1 to 1:1 Aspect Ratio Reduce  
   > 50% Scale  
   > 200% Scale  
-  > 200% Vertical Canvas Expand
-  > 200% Horizontal Canvas Expand
+  > 200% Vertical Canvas Expand  
+  > 200% Horizontal Canvas Expand  
   > Rotate 90 Degrees  
   > Rotate 180 Degrees  
   > Rotate 270 Degrees  
@@ -30,7 +38,6 @@ The actions provide tools for converting images from several common panoramic fo
   > Horizontal Offset 1024 pixels   
   > Vertical Offset 1024 pixels  
   > Horizontal and Vertical Offset 1024 pixels  
-
 
 ## Conversions ##
   > Inverse Angular Fisheye  
@@ -77,18 +84,18 @@ The actions provide tools for converting images from several common panoramic fo
   > Black Matting BG
    
 ## General Utilities: ##
-  > 1x1 Guide Grid
-  > 1x2 Guide Grid
-  > 1x6 Guide Grid 
-  > 2x1 Guide Grid 
+  > 1x1 Guide Grid  
+  > 1x2 Guide Grid  
+  > 1x6 Guide Grid  
+  > 2x1 Guide Grid  
   > 2x2 Guide Grid  
   > 3x2 Guide Grid  
   > 3x4 Guide Grid  
   > 4x3 Guide Grid  
   > 4x4 Guide Grid  
   > 6x1 Guide Grid  
-  > 6x2 Guide Grid
-  > 12x1 Guide Grid
+  > 6x2 Guide Grid  
+  > 12x1 Guide Grid  
   > Clear Guides  
   > Invert Colors  
   > Background to Layer  
@@ -138,7 +145,7 @@ To make it easier to find things, the actions groups are color coded:
 
 The "Conversions" actions are blue. 
 
-The "General Utilties" actions are violet. 
+The "General Utilities" actions are violet. 
 
 The "Masking and Selection" actions are green.
 
@@ -147,7 +154,6 @@ The "Transforms" actions are yellow.
 # Tool Descriptions #
 
 ## Transforms ##
-
 
 ### 1:1 to 2:1 Aspect Ratio Expand ###
 This action will convert a 1:1 square aspect ratio image into a 2:1 aspect ratio image by scaling the document 200% larger horizontally.

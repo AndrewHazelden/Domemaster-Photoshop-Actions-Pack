@@ -13,8 +13,9 @@ The actions provide tools for converting images from several common panoramic fo
 
 # Version History #
 
-## Version 2.1 - 2015-11-21 ##
-- Added a "Cube Map to Gear VR Mono" action that creates a 6:1 aspect ratio horizontal strip cubemap.
+## Version 2.2 - 2015-11-22 ##
+- Added a "Cube Map to Gear VR Mono" and "Gear VR Mono to Cube Map" set of actions. The "Cube Map to Gear VR Mono" action creates a 6:1 aspect ratio horizontal strip cubemap and the other action can extract that imagery back into a set of 6 cube map layers.
+- Added a "Stereo Side by Side Extract" and a "Stereo Over Under Extract" macro for processing stereo imagery.
 - Updated the "Cube Map to X" actions to fix an error that would happen if the File > New... dialog had a transparent background selected, and there was no background layer present in the new document.
 
 ## Version 2.1 - 2015-11-21 ##
@@ -52,6 +53,7 @@ The actions provide tools for converting images from several common panoramic fo
   > 2:1 Equirectangular to Angular Fisheye  
   > 2:1 Equirectangular to 180&deg; Domemaster   
   > 3x2 Cube Map to Cube Map  
+  > Gear VR Mono to Cube Map  
   > Vertical Cross to Cube Map  
   > Horizontal Cross to Cube Map  
   > Vertical Tee to Cube Map  
@@ -70,6 +72,8 @@ The actions provide tools for converting images from several common panoramic fo
   > Cube Map Rotate X:+90 Degrees  
   > Cube Map Rotate Y:+90 Degrees  
   > Cube Map Rotate Z:+90 Degrees  
+  > Stereo Side by Side Extract
+  > Stereo Over Under Extract
   
 ## Masking and Selection: ##
   > Crop to Selection  
@@ -334,6 +338,34 @@ The converted cubic map faces are named:
 
 ![3x2 Cube Map to Cube Map Example 1](Screenshots/Actions-Previews/3x2-cubemap-action.jpg)
 
+
+### Gear VR Mono to Cube Map ###
+This converts a Gear VR / Octange Render monoscopic horizontal strip format panorama into the cubic map panorama format.
+
+The input image is expected to be in a aspect 6:1 ratio. If the input image is 6,144x1024 pixel image the output will be a 1024x1024 pixel layered photoshop image.
+
+The converted cubic map faces are named:
+
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
 
 ### Vertical Cross to Cube Map ###
 This converts a vertical cross format panorama into the cubic map panorama format.
@@ -804,6 +836,39 @@ Tip: If you want to rotate a cross style, tee style, 3x2 cubic map, or strip sty
 ![Cube Map Rotate Z:+90 Degrees Example 1](Screenshots/Actions-Previews/cubemap-rotate-z90-action.jpg)
 
 ![Cube Map Rotate Z:+90 Degrees Example 1](Screenshots/Actions-Previews/cubemap-rotate-z90-layers.jpg)
+
+### Stereo Side by Side Extract ###
+
+This action will copy the left and right stereo views out of a side by side stereo format image.
+
+A new image will be created and then two layers will be added with the layer names of "left" and "right".
+
+The source image should have the stereo image layout of:
+
+<table>
+  <tr>
+    <td>left</td> <td>right</td>
+  </tr>
+</table>
+
+
+### Stereo Over Under Extract ###
+
+This action will copy the left and right stereo views out of an over under stereo format image.
+
+A new image will be created and then two layers will be added with the layer names of "left" and "right".
+
+The source image should have the stereo image layout of:
+
+<table>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+</table>
+
 
 ## Masking and Selection ##
 

@@ -1,8 +1,8 @@
 # Domemaster Photoshop Actions Pack #
-**Version 2.1** - Released November 21, 2015
-by Andrew Hazelden
+**Version 2.2** - Released November 22, 2015  
+by Andrew Hazelden  
 
-About the Software
+About the Software  
 -----------------
 The Domemaster Photoshop Actions Pack is a collection of custom Adobe Photoshop actions that were designed to speed up the fulldome content creation workflow. 
 
@@ -14,7 +14,11 @@ The actions provide tools for converting images from several common panoramic fo
 # Version History #
 
 ## Version 2.1 - 2015-11-21 ##
-- Improved the Photoshop CS6 compatibility of the "2:1 Equirectangular to 180&deg; Domemaster" action.
+- Added a "Cube Map to Gear VR Mono" action that creates a 6:1 aspect ratio horizontal strip cubemap.
+- Updated the "Cube Map to X" actions to fix an error that would happen if the File > New... dialog had a transparent background selected, and there was no background layer present in the new document.
+
+## Version 2.1 - 2015-11-21 ##
+- Improved the Photoshop compatibility of the "2:1 Equirectangular to 180&deg; Domemaster" action.
 
 ## Version 2 - 2015-11-20 ##
 - Expanded the **General Utilities** section to include "1x1 Guide Grid", "1x2 Guide Grid", "2x1 Guide Grid", "6x2 Guide Grid", and "12x1 Guide Grid".
@@ -55,6 +59,7 @@ The actions provide tools for converting images from several common panoramic fo
   > Vertical Strip to Cube Map  
   > Horizontal Strip to Cube Map  
   > Cube Map to 3x2 Cube Map  
+  > Cube Map to Gear VR Mono  
   > Cube Map to Vertical Cross  
   > Cube Map to Horizontal Cross  
   > Cube Map to Vertical Tee  
@@ -592,6 +597,17 @@ The converted vertical cross faces are located in the format:
 
 ![Cube Map to Vertical Cross Example](Screenshots/Actions-Previews/cubemap-vertical-cross-action.jpg)
 
+### Cube Map to Gear VR Mono ###
+
+This converts a cube map format image into the Gear VR / Octane Render ORBX 6:1 aspect ratio horizontal strip cubic panorama format.
+
+The converted horizontal strip faces are located in the format:
+
+<table>
+  <tr>
+    <td>Left</td> <td>Right</td> <td>Top (rotated 180)</td> <td>Bottom (rotated 180)</td> <td>Back</td>  <td>Front</td> 
+  </tr>
+</table>
 
 ### Cube Map to Horizontal Cross ###
 This converts a cube map format image into the horizontal cross panorama format.

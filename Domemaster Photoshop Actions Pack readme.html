@@ -292,16 +292,21 @@ img {
 </head>
 <body>
 <h1>Domemaster Photoshop Actions Pack</h1>
-<p><strong>Version 2.1</strong> - Released November 21, 2015
-by Andrew Hazelden</p>
-<h2>About the Software</h2>
+<p><strong>Version 2.2</strong> - Released November 22, 2015<br />
+by Andrew Hazelden  </p>
+<h2>About the Software  </h2>
 <p>The Domemaster Photoshop Actions Pack is a collection of custom Adobe Photoshop actions that were designed to speed up the fulldome content creation workflow. </p>
 <p>The actions provide tools for converting images from several common panoramic formats such as angular fisheye, equirectangular, and cube map panoramas, and general utilities for fulldome production.</p>
 <p><img src="Screenshots/photoshop-actions-list.png" alt="Domemaster Photoshop Actions Pack" /></p>
 <h1>Version History</h1>
 <h2>Version 2.1 - 2015-11-21</h2>
 <ul>
-<li>Improved the Photoshop CS6 compatibility of the &quot;2:1 Equirectangular to 180&deg; Domemaster&quot; action.</li>
+<li>Added a &quot;Cube Map to Gear VR Mono&quot; action that creates a 6:1 aspect ratio horizontal strip cubemap.</li>
+<li>Updated the &quot;Cube Map to X&quot; actions to fix an error that would happen if the File &gt; New... dialog had a transparent background selected, and there was no background layer present in the new document.</li>
+</ul>
+<h2>Version 2.1 - 2015-11-21</h2>
+<ul>
+<li>Improved the Photoshop compatibility of the &quot;2:1 Equirectangular to 180&deg; Domemaster&quot; action.</li>
 </ul>
 <h2>Version 2 - 2015-11-20</h2>
 <ul>
@@ -344,6 +349,7 @@ Horizontal Tee to Cube Map<br />
 Vertical Strip to Cube Map<br />
 Horizontal Strip to Cube Map<br />
 Cube Map to 3x2 Cube Map<br />
+Cube Map to Gear VR Mono<br />
 Cube Map to Vertical Cross<br />
 Cube Map to Horizontal Cross<br />
 Cube Map to Vertical Tee<br />
@@ -738,6 +744,14 @@ Flatten Image
   </tr>
 </table>
 <p><img src="Screenshots/Actions-Previews/cubemap-vertical-cross-action.jpg" alt="Cube Map to Vertical Cross Example" /></p>
+<h3>Cube Map to Gear VR Mono</h3>
+<p>This converts a cube map format image into the Gear VR / Octane Render ORBX 6:1 aspect ratio horizontal strip cubic panorama format.</p>
+<p>The converted horizontal strip faces are located in the format:</p>
+<table>
+  <tr>
+    <td>Left</td> <td>Right</td> <td>Top (rotated 180)</td> <td>Bottom (rotated 180)</td> <td>Back</td>  <td>Front</td> 
+  </tr>
+</table>
 <h3>Cube Map to Horizontal Cross</h3>
 <p>This converts a cube map format image into the horizontal cross panorama format.</p>
 <p>The converted horizontal cross faces are located in the format:</p>

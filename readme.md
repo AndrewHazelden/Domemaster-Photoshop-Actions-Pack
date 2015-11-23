@@ -76,8 +76,8 @@ The actions provide tools for converting images from several common panoramic fo
   > Cube Map Rotate X:+90 Degrees  
   > Cube Map Rotate Y:+90 Degrees  
   > Cube Map Rotate Z:+90 Degrees  
-  > Stereo Side by Side Extract
-  > Stereo Over Under Extract
+  > Stereo Side by Side Extract  
+  > Stereo Over Under Extract  
   
 ## Masking and Selection: ##
   > Crop to Selection  

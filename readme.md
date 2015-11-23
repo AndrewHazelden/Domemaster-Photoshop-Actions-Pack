@@ -71,7 +71,7 @@ The actions provide tools for converting images from several common panoramic fo
   > Cube Map to Horizontal Tee  
   > Cube Map to Vertical Strip  
   > Cube Map to Horizontal Strip  
-  > Cube Map to Gear VR Mono 
+  > Cube Map to Gear VR Mono  
   > Cube Map to New Cube Map  
   > Cube Map Rotate X:+90 Degrees  
   > Cube Map Rotate Y:+90 Degrees  

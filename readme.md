@@ -1,5 +1,5 @@
 # Domemaster Photoshop Actions Pack #
-**Version 2.2** - Released November 22, 2015  
+**Version 2.2** - Released November 23, 2015  
 by Andrew Hazelden 
 
 Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)  
@@ -17,7 +17,7 @@ The actions provide tools for converting images from several common panoramic fo
 
 # Version History #
 
-## Version 2.2 - 2015-11-22 ##
+## Version 2.2 - 2015-11-23 ##
 - Added a "Cube Map to Gear VR Mono" and "Gear VR Mono to Cube Map" set of actions. The "Cube Map to Gear VR Mono" action creates a 6:1 aspect ratio horizontal strip cubemap and the other action can extract that imagery back into a set of 6 cube map layers.
 - Added a "Stereo Side by Side Extract" and a "Stereo Over Under Extract" macro for processing stereo imagery.
 - Updated the "Cube Map to X" actions to fix an error that would happen if the File > New... dialog had a transparent background selected, and there was no background layer present in the new document.
@@ -57,21 +57,21 @@ The actions provide tools for converting images from several common panoramic fo
   > 2:1 Equirectangular to Angular Fisheye  
   > 2:1 Equirectangular to 180&deg; Domemaster   
   > 3x2 Cube Map to Cube Map  
-  > Gear VR Mono to Cube Map  
   > Vertical Cross to Cube Map  
   > Horizontal Cross to Cube Map  
   > Vertical Tee to Cube Map  
   > Horizontal Tee to Cube Map  
   > Vertical Strip to Cube Map  
   > Horizontal Strip to Cube Map  
-  > Cube Map to 3x2 Cube Map  
-  > Cube Map to Gear VR Mono  
+  > Gear VR Mono to Cube Map  
+  > Cube Map to 3x2 Cube Map   
   > Cube Map to Vertical Cross  
   > Cube Map to Horizontal Cross  
   > Cube Map to Vertical Tee  
   > Cube Map to Horizontal Tee  
   > Cube Map to Vertical Strip  
   > Cube Map to Horizontal Strip  
+  > Cube Map to Gear VR Mono 
   > Cube Map to New Cube Map  
   > Cube Map Rotate X:+90 Degrees  
   > Cube Map Rotate Y:+90 Degrees  
@@ -227,7 +227,7 @@ This action slides the image upwards by 1024 pixels and wraps the top side of th
 
 ![Vertical Offset 1024 Pixels Example2](Screenshots/Actions-Previews/Vertical-Offset-1024-Pixels-Action2.jpg)
 
-###Horizontal and Vertical Offset 1024 Pixels
+### Horizontal and Vertical Offset 1024 Pixels ###
 This action slides the image upwards and to the right by 1024 pixels and wraps the top and right side of the image around to the bottom side. This is useful for fixing image seams and preparing tiling textures. 
 
 If you are running this action on a 2K square resolution image it will shift the seams on an image's border to the center of the document. After you have finished your cloning or touch-up work you can run the action a 2nd time so the image border will be reset to its original position. 
@@ -339,39 +339,7 @@ The converted cubic map faces are named:
   </tr>
 </table>
 
-
 ![3x2 Cube Map to Cube Map Example 1](Screenshots/Actions-Previews/3x2-cubemap-action.jpg)
-
-
-### Gear VR Mono to Cube Map ###
-This converts a Gear VR / Octange Render monoscopic horizontal strip format panorama into the cubic map panorama format.
-
-The input image is expected to be in a aspect 6:1 ratio. If the input image is 6,144x1024 pixel image the output will be a 1024x1024 pixel layered photoshop image.
-
-The converted cubic map faces are named:
-
-<table>
-  <tr>
-    <td>front</td>
-  </tr>
-  <tr>
-    <td>right</td>
-  </tr>
-  <tr>
-    <td>back</td>
-  </tr>
-  <tr>
-    <td>left</td>
-  </tr>
-  <tr>
-    <td>top</td>
-  </tr>
-  <tr>
-    <td>bottom</td>
-  </tr>
-</table>
-
-![Gear VR Mono to Cube Map Example](Screenshots/Actions-Previews/gearvr-horizontal-strip-to-cubemap-action.jpg)
 
 ### Vertical Cross to Cube Map ###
 This converts a vertical cross format panorama into the cubic map panorama format.
@@ -399,9 +367,7 @@ The converted cubic map faces are named:
   </tr>
 </table>
 
-
 ![Vertical Cross to Cube Map Example](Screenshots/Actions-Previews/vertical-cross-cubemap-action.jpg)
-
 
 ### Horizontal Cross to Cube Map ###
 This converts a horizontal cross format panorama into the cubic map panorama format.
@@ -579,7 +545,6 @@ The input image is in the mental ray `mib_lookup_cube1` horizontal strip image f
 </table>
 
 
-
 The output from this action is a layered Photoshop document with cubic faces named:
 
 <table>
@@ -604,6 +569,36 @@ The output from this action is a layered Photoshop document with cubic faces nam
 </table>
 
 ![Mental Ray Horizontal Strip to Cube Map Example](Screenshots/Actions-Previews/mr-horizontal-strip-to-cubemap-action.jpg)
+
+### Gear VR Mono to Cube Map ###
+This converts a Gear VR / Octange Render monoscopic horizontal strip format panorama into the cubic map panorama format.
+
+The input image is expected to be in a aspect 6:1 ratio. If the input image is 6,144x1024 pixel image the output will be a 1024x1024 pixel layered photoshop image.
+
+The converted cubic map faces are named:
+
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+</table>
+
+![Gear VR Mono to Cube Map Example](Screenshots/Actions-Previews/gearvr-horizontal-strip-to-cubemap-action.jpg)
 
 
 ### Cube Map to 3x2 Cube Map ###
@@ -634,20 +629,6 @@ The converted vertical cross faces are located in the format:
 </table>
 
 ![Cube Map to Vertical Cross Example](Screenshots/Actions-Previews/cubemap-vertical-cross-action.jpg)
-
-### Cube Map to Gear VR Mono ###
-
-This converts a cube map format image into the Gear VR / Octane Render ORBX 6:1 aspect ratio horizontal strip cubic panorama format.
-
-The converted horizontal strip faces are located in the format:
-
-<table>
-  <tr>
-    <td>Left</td> <td>Right</td> <td>Top (rotated 180)</td> <td>Bottom (rotated 180)</td> <td>Back</td>  <td>Front</td> 
-  </tr>
-</table>
-
-![Cube Map to Gear VR Mono Example](Screenshots/Actions-Previews/cubemap-to-gearvr-horizontal-strip-action.jpg)
 
 ### Cube Map to Horizontal Cross ###
 This converts a cube map format image into the horizontal cross panorama format.
@@ -804,10 +785,21 @@ The output image is in the mental ray `mib_lookup_cube1` horizontal strip image 
   </tr>
 </table>
 
-
-
 ![Cube Map to Mental Ray Horizontal Strip Example](Screenshots/Actions-Previews/cubemap-to-mr-horizontal-strip-action.jpg)
 
+### Cube Map to Gear VR Mono ###
+
+This converts a cube map format image into the Gear VR / Octane Render ORBX 6:1 aspect ratio horizontal strip cubic panorama format.
+
+The converted horizontal strip faces are located in the format:
+
+<table>
+  <tr>
+    <td>Left</td> <td>Right</td> <td>Top (rotated 180)</td> <td>Bottom (rotated 180)</td> <td>Back</td>  <td>Front</td> 
+  </tr>
+</table>
+
+![Cube Map to Gear VR Mono Example](Screenshots/Actions-Previews/cubemap-to-gearvr-horizontal-strip-action.jpg)
 
 ### Cube Map to New Cube Map ###
 

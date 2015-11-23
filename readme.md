@@ -1,6 +1,10 @@
 # Domemaster Photoshop Actions Pack #
 **Version 2.2** - Released November 22, 2015  
-by Andrew Hazelden  
+by Andrew Hazelden 
+
+Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)  
+Blog: [http://www.andrewhazelden.com](http://www.andrewhazelden.com)
+ 
 
 About the Software  
 -----------------
@@ -367,6 +371,8 @@ The converted cubic map faces are named:
   </tr>
 </table>
 
+![Gear VR Mono to Cube Map Example](Screenshots/Actions-Previews/gearvr-horizontal-strip-to-cubemap-action.jpg)
+
 ### Vertical Cross to Cube Map ###
 This converts a vertical cross format panorama into the cubic map panorama format.
 
@@ -640,6 +646,8 @@ The converted horizontal strip faces are located in the format:
     <td>Left</td> <td>Right</td> <td>Top (rotated 180)</td> <td>Bottom (rotated 180)</td> <td>Back</td>  <td>Front</td> 
   </tr>
 </table>
+
+![Cube Map to Gear VR Mono Example](Screenshots/Actions-Previews/cubemap-to-gearvr-horizontal-strip-action.jpg)
 
 ### Cube Map to Horizontal Cross ###
 This converts a cube map format image into the horizontal cross panorama format.
@@ -1054,7 +1062,3 @@ When an image is flattened, all of the transparent background areas in the image
 * * *
 
 Actions created by Andrew Hazelden. (c) copyright 2015.
-
-Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)
-
-Blog: [http://www.andrewhazelden.com](http://www.andrewhazelden.com)

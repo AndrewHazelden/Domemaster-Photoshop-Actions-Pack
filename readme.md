@@ -12,6 +12,8 @@ The Domemaster Photoshop Actions Pack is a collection of custom Adobe Photoshop 
 
 The actions provide tools for converting images from several common panoramic formats such as angular fisheye, equirectangular, and cube map panoramas, and general utilities for fulldome production.
 
+*The Domemaster Photoshop Actions Pack is distributed under the GPL v3 license.*
+
 ![Domemaster Photoshop Actions Pack](Screenshots/photoshop-actions-list.png)
 
 

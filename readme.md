@@ -1,5 +1,5 @@
 # Domemaster Photoshop Actions Pack #
-**Version 2.2** - Released November 23, 2015  
+**Version 2.3** - Released December 18, 2015  
 by Andrew Hazelden 
 
 Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)  
@@ -18,6 +18,10 @@ The actions provide tools for converting images from several common panoramic fo
 
 
 # Version History #
+
+## Version 2.3 - 2015-12-18 ##
+
+- Added more sample panoramic images examples to illustrate the different image projection formats.
 
 ## Version 2.2 - 2015-11-23 ##
 - Added a "Cube Map to Gear VR Mono" and "Gear VR Mono to Cube Map" set of actions. The "Cube Map to Gear VR Mono" action creates a 6:1 aspect ratio horizontal strip cubemap and the other action can extract that imagery back into a set of 6 cube map layers.

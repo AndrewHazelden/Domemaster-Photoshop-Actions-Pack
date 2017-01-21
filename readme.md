@@ -16,7 +16,6 @@ The actions provide tools for converting images from several common panoramic fo
 
 ![Domemaster Photoshop Actions Pack](Screenshots/photoshop-actions-list.png)
 
-
 # Version History #
 
 ## Version 2.4 - 2017-01-21 ##
@@ -619,6 +618,95 @@ The converted cubic map faces are named:
 </table>
 
 ![Gear VR Mono to Cube Map Example](Screenshots/Actions-Previews/gearvr-horizontal-strip-to-cubemap-action.jpg)
+
+### Revit Vertical Strip to Cube Map ###
+This converts an Autodesk Revit cloud rendered vertical strip format panorama into the cubic map panorama format.
+
+The input image is expected to be in a aspect 1:6 ratio. If the input image is 1536x9216 pixel image the output will be a 1536x1536 pixel layered photoshop image.
+
+The converted cubic map faces are named:
+
+<table>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>front</td>
+  </tr>
+</table>
+
+### Revit Horizontal Strip to Cube Map ###
+This converts an Autodesk Revit cloud rendered horizontal strip format panorama into the cubic map panorama format.
+
+The input image is expected to be in a aspect 6:1 ratio. If the input image is 9216x1536 pixel image the output will be a 1536x1536 pixel layered photoshop image.
+
+The converted cubic map faces are named:
+
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>bottom (rotate 90° CCW)</td>
+  </tr>
+  <tr>
+    <td>top (rotate -90° CW)</td>
+  </tr>
+</table>
+
+
+### Revit Horizontal Strip Stereo to Cube Map Stereo ###
+This converts an Autodesk Revit cloud rendered stereoscopic 3D horizontal strip format panorama into a pair of left and right view cubic map panoramas.
+
+The input image is expected to be in an over/under stereo Revit Horizontal Strip panoramic format. For the over/under stereo image layout the right view is placed ontop of the left view.
+
+If the input image is 9216x3072 pixel image the output will be two 1536x1536 pixel layered photoshop images.
+
+Note: If you want to apply an additional image editing panoramic transform like a "Cube Map to Horizontal Cross" action to the left and right camera cube map documents, you need to drag the active image's filename tab in Photoshop to the farthest to the right side of the open document tabs.
+
+The converted cubic map faces are named:
+
+<table>
+  <tr>
+    <td>front</td>
+  </tr>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>bottom (rotate 90° CCW)</td>
+  </tr>
+  <tr>
+    <td>top (rotate -90° CW)</td>
+  </tr>
+</table>
 
 
 ### Cube Map to 3x2 Cube Map ###

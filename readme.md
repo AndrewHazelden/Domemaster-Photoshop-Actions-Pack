@@ -1,5 +1,5 @@
 # Domemaster Photoshop Actions Pack #
-**Version 2.3** - Released December 18, 2015  
+**Version 2.4** - Released January 21, 2017  
 by Andrew Hazelden 
 
 Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)  
@@ -18,6 +18,10 @@ The actions provide tools for converting images from several common panoramic fo
 
 
 # Version History #
+
+## Version 2.4 - 2017-01-21 ##
+
+- Added support for the new Autodesk Revit Vertical Strip and Horizontal Strip panoramic image projections.
 
 ## Version 2.3 - 2015-12-18 ##
 
@@ -39,6 +43,7 @@ The actions provide tools for converting images from several common panoramic fo
 # Action List #
 
 ## Transforms: ##
+
   > 1:1 to 2:1 Aspect Ratio Expand  
   > 2:1 to 1:1 Aspect Ratio Reduce  
   > 50% Scale  
@@ -55,6 +60,7 @@ The actions provide tools for converting images from several common panoramic fo
   > Horizontal and Vertical Offset 1024 pixels  
 
 ## Conversions ##
+
   > Inverse Angular Fisheye  
   > Angular Fisheye to Equirectangular  
   > Angular Fisheye to 2:1 Equirectangular  
@@ -69,14 +75,21 @@ The actions provide tools for converting images from several common panoramic fo
   > Horizontal Tee to Cube Map  
   > Vertical Strip to Cube Map  
   > Horizontal Strip to Cube Map  
+  > Mental Ray Horizontal Strip to Cube Map
   > Gear VR Mono to Cube Map  
+  > Revit Horizontal Strip to Cube Map  
+  > Revit Horizontal Strip Stereo to Cube Map Stereo  
+  > Revit Vertical Strip to Cube Map  
   > Cube Map to 3x2 Cube Map   
   > Cube Map to Vertical Cross  
   > Cube Map to Horizontal Cross  
   > Cube Map to Vertical Tee  
   > Cube Map to Horizontal Tee  
   > Cube Map to Vertical Strip  
-  > Cube Map to Horizontal Strip  
+  > Cube Map to Horizontal Strip 
+  > Cube Map to Mental Ray Horizontal Strip  
+  > Cube Map to Revit Horizontal Strip  
+  > Cube Map to Revit Vertical Strip  
   > Cube Map to Gear VR Mono  
   > Cube Map to New Cube Map  
   > Cube Map Rotate X:+90 Degrees  
@@ -86,6 +99,7 @@ The actions provide tools for converting images from several common panoramic fo
   > Stereo Over Under Extract  
   
 ## Masking and Selection: ##
+
   > Crop to Selection  
   > Select All  
   > Save Selection  
@@ -100,9 +114,10 @@ The actions provide tools for converting images from several common panoramic fo
   > Enable Layer Mask  
   > Disable Layer Mask  
   > Delete Layer Mask  
-  > Black Matting BG
+  > Black Matting BG  
    
 ## General Utilities: ##
+
   > 1x1 Guide Grid  
   > 1x2 Guide Grid  
   > 1x6 Guide Grid  
@@ -121,7 +136,6 @@ The actions provide tools for converting images from several common panoramic fo
   > Merge Visible  
   > Flatten Image  
    
-
 # Installation Instructions #
 
 The Domemaster Photoshop Actions Pack is compatible with Photoshop CS3 to CC on both Mac and Windows.

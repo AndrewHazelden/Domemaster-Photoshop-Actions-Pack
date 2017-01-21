@@ -80,7 +80,7 @@ The actions provide tools for converting images from several common panoramic fo
   > Horizontal Tee to Cube Map  
   > Vertical Strip to Cube Map  
   > Horizontal Strip to Cube Map  
-  > Mental Ray Horizontal Strip to Cube Map
+  > Mental Ray Horizontal Strip to Cube Map  
   > Gear VR Mono to Cube Map  
   > Revit Horizontal Strip to Cube Map  
   > Revit Horizontal Strip Stereo to Cube Map Stereo  
@@ -91,7 +91,7 @@ The actions provide tools for converting images from several common panoramic fo
   > Cube Map to Vertical Tee  
   > Cube Map to Horizontal Tee  
   > Cube Map to Vertical Strip  
-  > Cube Map to Horizontal Strip 
+  > Cube Map to Horizontal Strip  
   > Cube Map to Mental Ray Horizontal Strip  
   > Cube Map to Revit Horizontal Strip  
   > Cube Map to Revit Vertical Strip  

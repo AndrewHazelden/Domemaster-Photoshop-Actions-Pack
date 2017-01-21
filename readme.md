@@ -501,7 +501,7 @@ The converted cubic map faces are named:
 ### Vertical Strip to Cube Map ###
 This converts a vertical strip format panorama into the cubic map panorama format.
 
-The input image is expected to be in a aspect 1:6 ratio. If the input image is 1024x6,144 pixel image the output will be a 1024x1024 pixel layered photoshop image.
+The input image is expected to be in a aspect 1:6 ratio. If the input image is 1024x6,144 pixel image the output will be a 1024x1024 pixel layered Photoshop image.
 
 The converted cubic map faces are named:
 
@@ -531,7 +531,7 @@ The converted cubic map faces are named:
 ### Horizontal Strip to Cube Map ###
 This converts a horizontal strip format panorama into the cubic map panorama format.
 
-The input image is expected to be in a aspect 6:1 ratio. If the input image is 6,144x1024 pixel image the output will be a 1024x1024 pixel layered photoshop image.
+The input image is expected to be in a aspect 6:1 ratio. If the input image is 6,144x1024 pixel image the output will be a 1024x1024 pixel layered Photoshop image.
 
 The converted cubic map faces are named:
 
@@ -562,7 +562,7 @@ The converted cubic map faces are named:
 ### Mental Ray Horizontal Strip to Cube Map ###
 This converts a mental ray `mib_lookup_cube1` horizontal strip format panorama into the cubic map panorama format.
 
-The input image is expected to be in a aspect 6:1 ratio in the mental ray cubic frame layout. If the input image is 6,144x1024 pixel image the output will be a 1024x1024 pixel layered photoshop image.
+The input image is expected to be in a aspect 6:1 ratio in the mental ray cubic frame layout. If the input image is 6,144x1024 pixel image the output will be a 1024x1024 pixel layered Photoshop image.
 
 The input image is in the mental ray `mib_lookup_cube1` horizontal strip image format:
 
@@ -616,7 +616,7 @@ The output from this action is a layered Photoshop document with cubic faces nam
 ### Gear VR Mono to Cube Map ###
 This converts a Gear VR / Octange Render monoscopic horizontal strip format panorama into the cubic map panorama format.
 
-The input image is expected to be in a aspect 6:1 ratio. If the input image is 6,144x1024 pixel image the output will be a 1024x1024 pixel layered photoshop image.
+The input image is expected to be in a aspect 6:1 ratio. If the input image is 6,144x1024 pixel image the output will be a 1024x1024 pixel layered Photoshop image.
 
 The converted cubic map faces are named:
 
@@ -646,7 +646,7 @@ The converted cubic map faces are named:
 ### Revit Vertical Strip to Cube Map ###
 This converts an Autodesk Revit cloud rendered vertical strip format panorama into the cubic map panorama format.
 
-The input image is expected to be in a aspect 1:6 ratio. If the input image is 1536x9216 pixel image the output will be a 1536x1536 pixel layered photoshop image.
+The input image is expected to be in a aspect 1:6 ratio. If the input image is 1536x9216 pixel image the output will be a 1536x1536 pixel layered Photoshop image.
 
 The converted cubic map faces are named:
 
@@ -674,7 +674,7 @@ The converted cubic map faces are named:
 ### Revit Horizontal Strip to Cube Map ###
 This converts an Autodesk Revit cloud rendered horizontal strip format panorama into the cubic map panorama format.
 
-The input image is expected to be in a aspect 6:1 ratio. If the input image is 9216x1536 pixel image the output will be a 1536x1536 pixel layered photoshop image.
+The input image is expected to be in a aspect 6:1 ratio. If the input image is 9216x1536 pixel image the output will be a 1536x1536 pixel layered Photoshop image.
 
 The converted cubic map faces are named:
 
@@ -692,10 +692,10 @@ The converted cubic map faces are named:
     <td>left</td>
   </tr>
   <tr>
-    <td>bottom (rotate 90° CCW)</td>
+    <td>bottom (rotate 90&deg; CCW)</td>
   </tr>
   <tr>
-    <td>top (rotate -90° CW)</td>
+    <td>top (rotate -90&deg; CW)</td>
   </tr>
 </table>
 
@@ -705,7 +705,7 @@ This converts an Autodesk Revit cloud rendered stereoscopic 3D horizontal strip 
 
 The input image is expected to be in an over/under stereo Revit Horizontal Strip panoramic format. For the over/under stereo image layout the right view is placed ontop of the left view.
 
-If the input image is 9216x3072 pixel image the output will be two 1536x1536 pixel layered photoshop images.
+If the input image is 9216x3072 pixel image the output will be two 1536x1536 pixel layered Photoshop images.
 
 Note: If you want to apply an additional image editing panoramic transform like a "Cube Map to Horizontal Cross" action to the left and right camera cube map documents, you need to drag the active image's filename tab in Photoshop to the farthest to the right side of the open document tabs.
 
@@ -725,10 +725,10 @@ The converted cubic map faces are named:
     <td>left</td>
   </tr>
   <tr>
-    <td>bottom (rotate 90° CCW)</td>
+    <td>bottom (rotate 90&deg; CCW)</td>
   </tr>
   <tr>
-    <td>top (rotate -90° CW)</td>
+    <td>top (rotate -90&deg; CW)</td>
   </tr>
 </table>
 
@@ -863,6 +863,42 @@ The horizontal strip faces are located in the format:
 
 ![Cube Map to Horizontal Strip Example](Screenshots/Actions-Previews/cubemap-horizontal-strip-action.jpg)
 
+### Cube Map to Revit Horizontal Strip ###
+This converts a cube map format image into a single row panorama format that is used by Autodesk Revit's cloud rendering VR Panorama products.
+
+The Revit horizontal strip faces are located in the format:
+
+<table>
+  <tr>
+    <td>front</td> <td>right</td> <td>back</td> <td>left</td> <td>bottom (rotate 90&deg; CCW)</td> <td>top (rotate -90&deg; CW)</td>
+  </tr>
+</table>
+
+### Cube Map to Revit Vertical Strip ###
+This converts a cube map format image into a single column vertical panorama format that is used by Autodesk Revit's cloud rendering VR Panorama products.
+
+The Revit vertical strip faces are located in the format:
+
+<table>
+  <tr>
+    <td>right</td>
+  </tr>
+  <tr>
+    <td>left</td>
+  </tr>
+  <tr>
+    <td>top</td>
+  </tr>
+  <tr>
+    <td>bottom</td>
+  </tr>
+  <tr>
+    <td>back</td>
+  </tr>
+  <tr>
+    <td>front</td>
+  </tr>
+</table>
 
 ### Cube Map to Mental Ray Horizontal Strip ###
 This converts a cube map format image into a single row panorama format.

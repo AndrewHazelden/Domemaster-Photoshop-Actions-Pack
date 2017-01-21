@@ -22,6 +22,12 @@ The actions provide tools for converting images from several common panoramic fo
 
 - Added support for the new Autodesk Revit Vertical Strip and Horizontal Strip panoramic image projections.
 
+- Added a new experimental set of "UV Pass" actions allow you to prepare UV pass maps that are used for pre-computed panoramic image transforms. This approach is commonly used in compositing to correct for lens distortion.
+
+	Another term for a UV pass map if you are a Foundry NukeX user is an "ST map". A UV pass image template is made using a 16 bit integer red/green gradient image that is then distorted using a program like PTGui Pro and the Domemaster Fusion Macros.
+
+	Note: It is very important that you load and save a UV pass map using an sRGB linear gamma 1.0 color space in Photoshop or you will have distortions in your image template from the non-linear shading of the generated gradients.
+
 ## Version 2.3 - 2015-12-18 ##
 
 - Added more sample panoramic images examples to illustrate the different image projection formats.
@@ -134,7 +140,23 @@ The actions provide tools for converting images from several common panoramic fo
   > Background to Layer  
   > Merge Visible  
   > Flatten Image  
-   
+
+## UV Pass ##
+
+  > UV Rectangle Gradient Landscape Layout  
+  > UV Rectangle Gradient Portrait Layout  
+  > UV Equirectangular to Angular Gradient  
+  > UV Equirectangular to Domemaster Gradient  
+  > Horizontal Offset 960px  
+  > Vertical Offset 960px  
+  > Rotate 90 Degrees  
+  > Rotate 180 Degrees  
+  > Rotate 270 Degrees  
+  > Flip Vertical  
+  > Flop Horizontal  
+  > Gamma 2.2 to 1.0 Repair  
+  > Gamma 1.0 to 2.2 Repair  
+
 # Installation Instructions #
 
 The Domemaster Photoshop Actions Pack is compatible with Photoshop CS3 to CC on both Mac and Windows.
@@ -153,7 +175,7 @@ Select the "Load Actions" menu item.
 
 ![Select the "Load Actions..." menu item to import the actions pack](Screenshots/2.load-actions-menu-item.png)
 
-In the Load dialogue window select the action files "Conversions.atn", "General Utilties.atn", "Masking and Selection.atn", and "Transforms.atn".
+In the Load dialogue window select the action files "Conversions.atn", "General Utilties.atn", "Masking and Selection.atn", "Transforms.atn", and "UV Pass.atn".
 
 Click the Load button to open the action files.
 
@@ -169,7 +191,7 @@ If you want to make it easier to run the actions you can switch the Actions tab 
 
 Click on the Actions tab pop-up menu located at the top right of the actions tab.
 
-Select the first item in the menu labeled "Button Mode". Your view will switch from a long list into a colorfull grid of labeled buttons.  
+Select the first item in the menu labeled "Button Mode". Your view will switch from a long list into a colorful grid of labeled buttons.  
 
 ![Switch the Actions tab to the to button display  mode](Screenshots/5.switch-to-button-mode.png)
 
@@ -182,6 +204,8 @@ The "General Utilities" actions are violet.
 The "Masking and Selection" actions are green.
 
 The "Transforms" actions are yellow.
+
+The "UV Pass" actions are red.
 
 # Tool Descriptions #
 
@@ -1158,7 +1182,14 @@ When an image is flattened, all of the transparent background areas in the image
 
 *Note:* You really want to have saved a backup of your Photoshop document before you flatten the image because all of your layers are permanently merged into a single element!
 
+## UV Pass ##
+
+The new experimental set of "UV Pass" actions allow you to prepare UV pass maps that are used for pre-computed panoramic image transforms. This approach is commonly used in compositing to correct for lens distortion. Another term for a UV pass map if you are a Foundry NukeX user is an "ST map". 
+
+A UV pass image template is made using a 16 bit integer red/green gradient image that is then distorted using a program like PTGui Pro and the Domemaster Fusion Macros. 
+
+Note: It is very important that you load and save a UV pass map using an sRGB linear gamma 1.0 color space in Photoshop or you will have distortions in your image template from the non-linear shading of the generated gradients.
 
 * * *
 
-Actions created by Andrew Hazelden. (c) copyright 2015.
+Actions created by Andrew Hazelden. (c) copyright 2012-2017.

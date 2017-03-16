@@ -1,5 +1,5 @@
 # Domemaster Photoshop Actions Pack #
-**Version 2.4** - Released January 21, 2017  
+**Version 2.5** - Released March 26, 2017  
 by Andrew Hazelden 
 
 Email: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)  
@@ -17,6 +17,10 @@ The actions provide tools for converting images from several common panoramic fo
 ![Domemaster Photoshop Actions Pack](Screenshots/photoshop-actions-list.png)
 
 # Version History #
+
+## Version 2.5 - 2017-03-24 ##
+
+- Fixed a Photoshop CS6 compatibility issue with the "2:1 Equirectangular to Domemaster 180&deg;" action.
 
 ## Version 2.4 - 2017-01-21 ##
 
